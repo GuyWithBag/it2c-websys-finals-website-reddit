@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "live-server ./src/pages"
+  },
+  "dependencies": {
+    "prettier": "^3.3.3"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
