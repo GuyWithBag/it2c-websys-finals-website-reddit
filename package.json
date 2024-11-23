@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "live-server ./src/pages"
+    "start": "live-server ./src"
   },
   "dependencies": {
     "prettier": "^3.3.3"

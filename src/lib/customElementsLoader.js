@@ -1,4 +1,4 @@
-async function registerComponents() {
+export async function registerComponents() {
     const componentFiles = await _fetchComponentList(); // List of component files
     // console.log(componentFiles)
     // console.log('Current Path:', window.location.href);
@@ -9,6 +9,9 @@ async function registerComponents() {
         // Parse the HTML file
         const template = document.createElement('template');
         template.innerHTML = htmlText;
+        template.innerHTML += `<link rel="stylesheet" href="../css-reset.css" />
+        <link rel="stylesheet" href="../vanilla-tailwind.css" />
+        <link rel="stylesheet" href="../globals.css" />`
         class CustomElement extends HTMLElement {
             constructor() {
                 super();
@@ -41,6 +44,4 @@ async function _fetchComponentList() {
     }
 }
 
-// Register components on page load
-window.addEventListener('DOMContentLoaded', registerComponents);
 

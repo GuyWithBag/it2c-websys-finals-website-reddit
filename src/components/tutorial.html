@@ -1,0 +1,22 @@
+<!-- 
+    If you have your own css, you have to add this here: 
+        <link rel="stylesheet" href="../vanilla-tailwind.css" /> 
+ -->
+
+<div
+	class="bg-red inline-flex justify-center items-center rounded-md p-3 text-white"
+>
+	<!-- slot will be replaced by elements/children that are <div name="myText"></div> -->
+	<slot name="myText"></slot>
+</div>
+
+<!-- 
+    To use this in your html file, just type: 
+        <my-{yourFileName}>
+            <div name="slotName">Hello World</div>
+        </my-{yourFileName}> 
+    eg: 
+        <my-tutorial>
+            <div name="myText">Hello World</div>
+        </my-tutorial> 
+-->

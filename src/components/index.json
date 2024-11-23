@@ -1,5 +1,6 @@
 {
     "components": [
-        "navigation"
+        "button", 
+        "tutorial"
     ]
 }
