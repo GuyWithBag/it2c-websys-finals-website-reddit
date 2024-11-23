@@ -1,6 +1,7 @@
 {
     "components": [
         "button", 
-        "tutorial"
+        "tutorial", 
+        "nested-tutorial/tutorial"
     ]
 }

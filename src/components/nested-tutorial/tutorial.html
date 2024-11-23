@@ -1,0 +1,23 @@
+<!-- 
+    To add nested components, put in json file 
+        {path}/{filename} 
+    eg. 
+        nested-tutorial/tutorial 
+
+    To use this in your page, just 
+        <my-{path}-{filename}></my-{path}-{filename}> 
+
+    eg. 
+        <my-nested-tutorial-tutorial></my-nested-tutorial-tutorial>
+
+-->
+
+<link rel="stylesheet" href="../../css-reset.css" />
+<link rel="stylesheet" href="../../vanilla-tailwind.css" />
+<link rel="stylesheet" href="../../globals.css" />
+<div
+	class="bg-red inline-flex justify-center items-center rounded-md p-3 text-white"
+>
+	<!-- slot will be replaced by elements/children that are <div name="myText"></div> -->
+	<slot name="myText"></slot>
+</div>
