@@ -1,3 +1,31 @@
 .bg-red {
 	background-color: red;
 }
+
+.bg-primary {
+	background-color: #ffffff;
+}
+.text-primary {
+	color: #0e1113;
+}
+.border-primary {
+	border-color: #2a3236;
+}
+.bg-white {
+	background-color: #ffffff;
+}
+.text-white {
+	color: #ffffff;
+}
+.border-white {
+	border-color: #ffffff;
+}
+.bg-black {
+	background-color: #000000;
+}
+.text-black {
+	color: #000000;
+}
+.border-black {
+	border-color: #000000;
+}
