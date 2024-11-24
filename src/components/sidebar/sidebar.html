@@ -1,11 +1,62 @@
-<nav class="bg-black border-r-2 border-light-gray fixed h-full w-56">
-	<ol>
+<nav
+	class="bg-black border-r-2 border-light-gray fixed h-screen w-70 text-white px-10 py-8"
+>
+	<ol class="flex flex-col gap-4">
 		<li>
-			<a></a>
+			<a class="flex items-center gap-3 text-bodySmall">
+				<my-icons-home></my-icons-home>
+				<div>Home</div>
+			</a>
+		</li>
+		<li>
+			<a class="flex items-center gap-3 text-bodySmall">
+				<my-icons-popular></my-icons-popular>
+				<div>Popular</div>
+			</a>
+		</li>
+		<li>
+			<a class="flex items-center gap-3 text-bodySmall">
+				<my-icons-explore></my-icons-explore>
+				<div>Explore</div>
+			</a>
+		</li>
+		<li>
+			<a class="flex items-center gap-3 text-bodySmall">
+				<my-icons-all></my-icons-all>
+				<div>All</div>
+			</a>
 		</li>
 	</ol>
-	<ol></ol>
-	<ol></ol>
+	<hr class="border-dark-gray" />
+	<ol>
+		<li class="flex justify-between items-center">
+			<p class="text-gray text-bodySmall">CUSTOM FEEDS</p>
+			<my-icons-up-arrow></my-icons-up-arrow>
+		</li>
+		<li class="flex center">
+			<my-icons-plus></my-icons-plus>
+			<p class="text-bodySmall">Create a custom feed</p>
+		</li>
+	</ol>
+	<hr class="border-dark-gray" />
+	<ol>
+		<li class="flex justify-between items-center">
+			<p class="text-gray text-bodySmall">RECENT</p>
+			<my-icons-up-arrow></my-icons-up-arrow>
+		</li>
+	</ol>
+	<ol>
+		<li class="flex justify-between items-center">
+			<p class="text-gray text-bodySmall">COMMUNITIES</p>
+			<my-icons-up-arrow></my-icons-up-arrow>
+		</li>
+	</ol>
+	<ol>
+		<li class="flex justify-between items-center">
+			<p class="text-gray text-bodySmall">RESOURCES</p>
+			<my-icons-up-arrow></my-icons-up-arrow>
+		</li>
+	</ol>
 	<ol></ol>
 	<ol></ol>
 </nav>
