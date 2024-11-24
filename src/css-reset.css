@@ -148,3 +148,7 @@ button:focus {
 	outline: 2px solid #005fcc; /* Add visible focus indicator */
 	outline-offset: 2px; /* Add space around outline */
 }
+
+* {
+	box-sizing: border-box;
+}
