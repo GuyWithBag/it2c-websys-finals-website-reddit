@@ -2,6 +2,7 @@
     "components": [
         "button", 
         "tutorial", 
-        "nested-tutorial/tutorial"
+        "nested-tutorial/tutorial", 
+        "navbar/navbar"
     ]
 }
