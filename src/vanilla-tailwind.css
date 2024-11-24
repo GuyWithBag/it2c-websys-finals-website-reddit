@@ -8273,3 +8273,67 @@
 .text-black {
 	color: #000000;
 }
+/* Gap Utilities (0 to 20) */
+.gap-0 {
+	gap: 0rem;
+}
+.gap-1 {
+	gap: 0.25rem;
+} /* 1 * 0.25rem */
+.gap-2 {
+	gap: 0.5rem;
+} /* 2 * 0.25rem */
+.gap-3 {
+	gap: 0.75rem;
+} /* 3 * 0.25rem */
+.gap-4 {
+	gap: 1rem;
+} /* 4 * 0.25rem */
+.gap-5 {
+	gap: 1.25rem;
+} /* 5 * 0.25rem */
+.gap-6 {
+	gap: 1.5rem;
+} /* 6 * 0.25rem */
+.gap-7 {
+	gap: 1.75rem;
+} /* 7 * 0.25rem */
+.gap-8 {
+	gap: 2rem;
+} /* 8 * 0.25rem */
+.gap-9 {
+	gap: 2.25rem;
+} /* 9 * 0.25rem */
+.gap-10 {
+	gap: 2.5rem;
+} /* 10 * 0.25rem */
+.gap-11 {
+	gap: 2.75rem;
+} /* 11 * 0.25rem */
+.gap-12 {
+	gap: 3rem;
+} /* 12 * 0.25rem */
+.gap-13 {
+	gap: 3.25rem;
+} /* 13 * 0.25rem */
+.gap-14 {
+	gap: 3.5rem;
+} /* 14 * 0.25rem */
+.gap-15 {
+	gap: 3.75rem;
+} /* 15 * 0.25rem */
+.gap-16 {
+	gap: 4rem;
+} /* 16 * 0.25rem */
+.gap-17 {
+	gap: 4.25rem;
+} /* 17 * 0.25rem */
+.gap-18 {
+	gap: 4.5rem;
+} /* 18 * 0.25rem */
+.gap-19 {
+	gap: 4.75rem;
+} /* 19 * 0.25rem */
+.gap-20 {
+	gap: 5rem;
+} /* 20 * 0.25rem */
