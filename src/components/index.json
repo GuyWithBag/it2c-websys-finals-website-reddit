@@ -12,7 +12,24 @@
         "icons/plus", 
         "icons/bell", 
         "icons/search", 
-        "icons/burger" 
-
+        "icons/burger" , 
+        "sidebar/sidebar",
+        "icons/about",
+        "icons/advertise",
+        "icons/all",
+        "icons/best-of",
+        "icons/blog",
+        "icons/careers",
+        "icons/communities",
+        "icons/content-policy",
+        "icons/explore",
+        "icons/help",
+        "icons/home",
+        "icons/popular",
+        "icons/press",
+        "icons/privacy-policy",
+        "icons/topics",
+        "icons/up-arrow",
+        "icons/user-agreement"
     ]
 }
