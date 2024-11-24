@@ -1,3 +1,5 @@
+let componentsPath = "./components/";
+
 export async function registerComponents() {
 	const componentFiles = await _fetchComponentList(); // List of component files
 	for (const componentPath of componentFiles) {
@@ -25,31 +27,39 @@ export async function registerComponents() {
 		}
 
 		// Fetch the component HTML
-		const response = await fetch(`../components/${componentPath}.html`);
+		const response = await fetch(`${componentsPath}${componentPath}.html`);
 		if (!response.ok) {
 			console.error(`Failed to fetch component: ${componentPath}`);
 			continue;
 		}
 		const htmlText = await response.text();
-		// Parse the HTML file and append styles
-		// Dynamically calculate relative paths for stylesheets
+
+		// Parse the HTML file and append dynamically adjusted styles
 		const relativeDepth = pathSegments.length; // Number of subfolders
 		const relativePrefix = "../".repeat(relativeDepth + 1); // Adjust relative paths
-		// Parse the HTML file and append dynamically adjusted styles
-		const template = document.createElement("template");
-		template.innerHTML = `
-            <link rel="stylesheet" href="${relativePrefix}css-reset.css" />
-            <link rel="stylesheet" href="${relativePrefix}vanilla-tailwind.css" />
-            <link rel="stylesheet" href="${relativePrefix}globals.css" />
-            ${htmlText}
-        `;
 
 		// Define the custom element class
 		class CustomElement extends HTMLElement {
 			constructor() {
-				super();
-				this.attachShadow({ mode: "open" });
-				this.shadowRoot.appendChild(template.content.cloneNode(true));
+				super(); // Always call the parent class constructor
+			}
+
+			async connectedCallback() {
+				// Create the template with styles and HTML content
+				const template = document.createElement("template");
+				template.innerHTML = `${htmlText}`;
+				console.log(template.innerHTML);
+
+				// Append the content directly to the element (no Shadow DOM)
+				this.appendChild(template.content.cloneNode(true));
+
+				// Perform any additional setup if necessary
+				console.log(`${customElementName} initialized`);
+			}
+
+			disconnectedCallback() {
+				// Cleanup logic if needed (e.g., removing event listeners)
+				console.log(`${customElementName} removed from the DOM`);
 			}
 		}
 
@@ -62,7 +72,7 @@ export async function registerComponents() {
 async function _fetchComponentList() {
 	try {
 		// Fetch the JSON file
-		const response = await fetch("../components/index.json"); // Adjust the path as needed
+		const response = await fetch(`${componentsPath}index.json`); // Adjust the path as needed
 		if (!response.ok) {
 			throw new Error(`HTTP error! status: ${response.status}`);
 		}
