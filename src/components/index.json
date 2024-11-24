@@ -6,6 +6,10 @@
         "navbar/navbar", 
         "icons/more",
         "icons/reddit", 
-        "icons/reddit-title"
+        "icons/reddit-title",
+        "icons/chat-bubble", 
+        "icons/cursor-target", 
+        "icons/plus", 
+        "icons/bell"
     ]
 }
