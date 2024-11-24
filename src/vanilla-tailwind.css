@@ -8273,3 +8273,8 @@
 .text-black {
 	color: #000000;
 }
+
+.center {
+	justify-content: center;
+	align-items: center;
+}
