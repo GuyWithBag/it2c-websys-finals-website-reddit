@@ -1,31 +1,68 @@
+:root {
+	--primary: #ff4500;
+	--white: #ffffff;
+	--black: #0e1113;
+	--dark-gray: #2a3236;
+	--light-gray: #3e4142;
+}
+
 .bg-red {
 	background-color: red;
 }
 
+/* todo: change to the correct colors */
+
 .bg-primary {
-	background-color: #ffffff;
+	background-color: var(--primary);
 }
 .text-primary {
-	color: #0e1113;
+	color: var(--primary);
 }
 .border-primary {
-	border-color: #2a3236;
+	border-color: var(--primary);
 }
 .bg-white {
-	background-color: #ffffff;
+	background-color: var(--white);
 }
 .text-white {
-	color: #ffffff;
+	color: var(--white);
 }
 .border-white {
-	border-color: #ffffff;
+	border-color: var(--white);
 }
 .bg-black {
-	background-color: #000000;
+	background-color: var(--black);
 }
 .text-black {
-	color: #000000;
+	color: var(--black);
 }
 .border-black {
-	border-color: #000000;
+	border-color: var(--black);
+}
+
+/* Background Classes */
+.bg-dark-gray {
+	background-color: var(--dark-gray);
+}
+
+.bg-light-gray {
+	background-color: var(--light-gray);
+}
+
+/* Text Classes */
+.text-dark-gray {
+	color: var(--dark-gray);
+}
+
+.text-light-gray {
+	color: var(--light-gray);
+}
+
+/* Border Classes */
+.border-dark-gray {
+	border-color: var(--dark-gray);
+}
+
+.border-light-gray {
+	border-color: var(--light-gray);
 }

@@ -3,6 +3,9 @@
         "button", 
         "tutorial", 
         "nested-tutorial/tutorial", 
-        "navbar/navbar"
+        "navbar/navbar", 
+        "icons/more-vertical",
+        "icons/more",
+        "icons/reddit"
     ]
 }
