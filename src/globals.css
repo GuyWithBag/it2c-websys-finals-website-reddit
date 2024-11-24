@@ -69,3 +69,76 @@ body {
 .border-light-gray {
 	border-color: var(--light-gray);
 }
+
+/* Flutter-inspired Tailwind CSS text styles */
+.text-headlineLarge {
+	font-size: 2.25rem; /* 36px */
+	font-weight: 700; /* Bold */
+	line-height: 2.5rem; /* 40px */
+}
+
+.text-headlineMedium {
+	font-size: 2rem; /* 32px */
+	font-weight: 600; /* Semi-bold */
+	line-height: 2.25rem; /* 36px */
+}
+
+.text-headlineSmall {
+	font-size: 1.75rem; /* 28px */
+	font-weight: 500; /* Medium */
+	line-height: 2rem; /* 32px */
+}
+
+.text-titleLarge {
+	font-size: 1.5rem; /* 24px */
+	font-weight: 700; /* Bold */
+	line-height: 1.75rem; /* 28px */
+}
+
+.text-titleMedium {
+	font-size: 1.25rem; /* 20px */
+	font-weight: 600; /* Semi-bold */
+	line-height: 1.5rem; /* 24px */
+}
+
+.text-titleSmall {
+	font-size: 1.125rem; /* 18px */
+	font-weight: 500; /* Medium */
+	line-height: 1.375rem; /* 22px */
+}
+
+.text-bodyLarge {
+	font-size: 1rem; /* 16px */
+	font-weight: 400; /* Normal */
+	line-height: 1.5rem; /* 24px */
+}
+
+.text-bodyMedium {
+	font-size: 0.875rem; /* 14px */
+	font-weight: 400; /* Normal */
+	line-height: 1.25rem; /* 20px */
+}
+
+.text-bodySmall {
+	font-size: 0.75rem; /* 12px */
+	font-weight: 400; /* Normal */
+	line-height: 1rem; /* 16px */
+}
+
+.text-labelLarge {
+	font-size: 0.875rem; /* 14px */
+	font-weight: 600; /* Semi-bold */
+	line-height: 1.25rem; /* 20px */
+}
+
+.text-labelMedium {
+	font-size: 0.75rem; /* 12px */
+	font-weight: 500; /* Medium */
+	line-height: 1rem; /* 16px */
+}
+
+.text-labelSmall {
+	font-size: 0.625rem; /* 10px */
+	font-weight: 500; /* Medium */
+	line-height: 0.875rem; /* 14px */
+}

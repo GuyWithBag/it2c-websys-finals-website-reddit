@@ -4568,29 +4568,6 @@
 	margin-bottom: var(--spacing-96);
 }
 
-/* Typography Inspired by Flutter */
-.text-headlineLarge {
-	font-size: 2.5rem;
-	font-weight: bold;
-}
-.text-headlineMedium {
-	font-size: 2rem;
-	font-weight: bold;
-}
-.text-headlineSmall {
-	font-size: 1.75rem;
-	font-weight: bold;
-}
-.text-bodyLarge {
-	font-size: 1.25rem;
-}
-.text-bodyMedium {
-	font-size: 1rem;
-}
-.text-bodySmall {
-	font-size: 0.875rem;
-}
-
 /* Width and Height */
 .w-0 {
 	width: var(--spacing-0);
