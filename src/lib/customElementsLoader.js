@@ -35,8 +35,8 @@ export async function registerComponents() {
 		const htmlText = await response.text();
 
 		// Parse the HTML file and append dynamically adjusted styles
-		const relativeDepth = pathSegments.length; // Number of subfolders
-		const relativePrefix = "../".repeat(relativeDepth + 1); // Adjust relative paths
+		// const relativeDepth = pathSegments.length; // Number of subfolders
+		// const relativePrefix = "../".repeat(relativeDepth + 1); // Adjust relative paths
 
 		// Define the custom element class
 		class CustomElement extends HTMLElement {
@@ -48,18 +48,18 @@ export async function registerComponents() {
 				// Create the template with styles and HTML content
 				const template = document.createElement("template");
 				template.innerHTML = `${htmlText}`;
-				console.log(template.innerHTML);
+				// console.log(template.innerHTML);
 
 				// Append the content directly to the element (no Shadow DOM)
 				this.appendChild(template.content.cloneNode(true));
 
 				// Perform any additional setup if necessary
-				console.log(`${customElementName} initialized`);
+				// console.log(`${customElementName} initialized`);
 			}
 
 			disconnectedCallback() {
 				// Cleanup logic if needed (e.g., removing event listeners)
-				console.log(`${customElementName} removed from the DOM`);
+				// console.log(`${customElementName} removed from the DOM`);
 			}
 		}
 

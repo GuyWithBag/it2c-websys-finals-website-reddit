@@ -10,6 +10,9 @@
         "icons/chat-bubble", 
         "icons/cursor-target", 
         "icons/plus", 
-        "icons/bell"
+        "icons/bell", 
+        "icons/search", 
+        "icons/burger" 
+
     ]
 }

@@ -1,16 +1,25 @@
 <!-- This is in progress W.I.P. -->
 <!-- <link rel="stylesheet" href="components/navbar/navbar.css" /> -->
 
-<nav class="bg-black w-full text-white h-12 px-2">
-	<ol class="flex flex-row gap-1 justify-between items-center h-full">
-		<li>
+<nav
+	class="bg-black w-full text-white h-12 px-2 border-b-2 border-light-gray fixed"
+>
+	<ol class="flex flex-row justify-between items-center h-full">
+		<li class="flex flex-row center gap-2">
+			<!-- <my-icons-burger></my-icons-burger> -->
 			<my-icons-reddit></my-icons-reddit>
+			<my-icons-reddit-title
+				class="w-20 h-10 text-white flex center"
+			></my-icons-reddit-title>
+		</li>
+		<li
+			class="flex flex-row justify-start bg-dark-gray rounded-full w-96 p-2 gap-1 items-center"
+		>
+			<my-icons-search></my-icons-search>
+			<p class="text-bodySmall text-gray">Search Reddit</p>
 		</li>
 		<li>
-			<div></div>
-		</li>
-		<li>
-			<ol class="flex flex-row gap-1 items-center justify-center">
+			<ol class="flex flex-row gap-4 items-center justify-center">
 				<li>
 					<button>
 						<my-icons-cursor-target></my-icons-cursor-target>
@@ -21,16 +30,29 @@
 						<my-icons-chat-bubble></my-icons-chat-bubble>
 					</button>
 				</li>
-				<li class="flex flex-row items-center justify-center">
-					<my-icons-plus>
-					</svg>
-					<button>Create</button>
+				<li>
+					<button class="flex flex-row center gap-1 text-bodySmall text-white">
+						<my-icons-plus></my-icons-plus>
+						Create
+					</button>
 				</li>
 				<li>
-					<my-icons-bell></my-icons-bell>
+					<button>
+						<my-icons-bell></my-icons-bell>
+					</button>
 				</li>
 				<li>
-					<div class="rounded-full "></div>
+					<div class="inline-flex center rounded-full overflow-hidden">
+						<img
+							src="https://www.redditstatic.com/avatars/defaults/v2/avatar_default_0.png"
+							alt="User Avatar"
+							class="object-contain w-7 h-7"
+						/>
+						<!-- <span
+							class="bg-online flex absolute bottom-0 rounded-full border-solid border-neutral-background bg-neutral-background right-[0.10rem] border w-[.375rem] h-[.375rem] border-2"
+						> -->
+						<!-- </span> -->
+					</div>
 				</li>
 			</ol>
 		</li>
