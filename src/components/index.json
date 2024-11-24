@@ -6,6 +6,7 @@
         "navbar/navbar", 
         "icons/more-vertical",
         "icons/more",
-        "icons/reddit"
+        "icons/reddit", 
+        "icons/reddit-title"
     ]
 }
