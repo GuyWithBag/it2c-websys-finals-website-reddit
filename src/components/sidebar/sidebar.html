@@ -1,62 +1,290 @@
+<link rel="stylesheet" href="./components/sidebar/sidebar.css" />
+
 <nav
-	class="bg-black border-r-2 border-light-gray fixed h-screen w-70 text-white px-10 py-8"
+	class="flex flex-col gap-4 bg-black border-r-2 border-light-gray fixed h-full w-72 text-white px-10 py-8"
 >
 	<ol class="flex flex-col gap-4">
 		<li>
-			<a class="flex items-center gap-3 text-bodySmall">
+			<a
+				href="https://www.reddit.com/"
+				class="flex items-center gap-3 text-bodySmall"
+			>
 				<my-icons-home></my-icons-home>
 				<div>Home</div>
 			</a>
 		</li>
 		<li>
-			<a class="flex items-center gap-3 text-bodySmall">
+			<a
+				href="https://www.reddit.com/r/popular/"
+				class="flex items-center gap-3 text-bodySmall"
+			>
 				<my-icons-popular></my-icons-popular>
 				<div>Popular</div>
 			</a>
 		</li>
 		<li>
-			<a class="flex items-center gap-3 text-bodySmall">
+			<a
+				href="https://www.reddit.com/explore/"
+				class="flex items-center gap-3 text-bodySmall"
+			>
 				<my-icons-explore></my-icons-explore>
 				<div>Explore</div>
 			</a>
 		</li>
 		<li>
-			<a class="flex items-center gap-3 text-bodySmall">
+			<a
+				href="https://www.reddit.com/r/all/"
+				class="flex items-center gap-3 text-bodySmall"
+			>
 				<my-icons-all></my-icons-all>
 				<div>All</div>
 			</a>
 		</li>
 	</ol>
-	<hr class="border-dark-gray" />
-	<ol>
+	<div class="bg-dark-gray h-one-pixel w-full"></div>
+	<ol class="flex flex-col gap-4">
 		<li class="flex justify-between items-center">
 			<p class="text-gray text-bodySmall">CUSTOM FEEDS</p>
 			<my-icons-up-arrow></my-icons-up-arrow>
 		</li>
-		<li class="flex center">
-			<my-icons-plus></my-icons-plus>
-			<p class="text-bodySmall">Create a custom feed</p>
+		<li>
+			<a
+				href="https://www.reddit.com/"
+				class="ml-2 flex flex-row items-center gap-3"
+			>
+				<my-icons-plus></my-icons-plus>
+				<p class="text-bodySmall">Create a custom feed</p>
+			</a>
 		</li>
 	</ol>
-	<hr class="border-dark-gray" />
-	<ol>
+	<div class="bg-dark-gray h-one-pixel w-full"></div>
+	<ol class="flex flex-col gap-4">
 		<li class="flex justify-between items-center">
 			<p class="text-gray text-bodySmall">RECENT</p>
 			<my-icons-up-arrow></my-icons-up-arrow>
 		</li>
-	</ol>
-	<ol>
-		<li class="flex justify-between items-center">
-			<p class="text-gray text-bodySmall">COMMUNITIES</p>
-			<my-icons-up-arrow></my-icons-up-arrow>
+		<li>
+			<a
+				href="https://www.reddit.com/r/tf2/"
+				class="flex flex-row items-center gap-3"
+			>
+				<img
+					class="rounded-full"
+					loading="lazy"
+					width="32"
+					height="32"
+					aria-hidden="true"
+					alt=""
+					src="https://styles.redditmedia.com/t5_2qka0/styles/communityIcon_um711ahh3g431.png"
+				/>
+				<p class="text-bodySmall">r/tf2</p>
+			</a>
+		</li>
+		<li>
+			<a
+				href="https://www.reddit.com/r/piracy/"
+				class="flex flex-row items-center gap-3"
+			>
+				<img
+					class="rounded-full"
+					loading="lazy"
+					width="32"
+					height="32"
+					aria-hidden="true"
+					alt=""
+					src="https://styles.redditmedia.com/t5_2qmox/styles/communityIcon_r6keaskpkp8c1.png"
+				/>
+				<p class="text-bodySmall">r/Piracy</p>
+			</a>
+		</li>
+		<li>
+			<a
+				href="https://www.reddit.com/r/rainmeter/"
+				class="flex flex-row items-center gap-3"
+			>
+				<img
+					class="rounded-full"
+					loading="lazy"
+					width="32"
+					height="32"
+					aria-hidden="true"
+					alt=""
+					src="https://styles.redditmedia.com/t5_2s0bb/styles/communityIcon_fcl3bfotji421.png"
+				/>
+				<p class="text-bodySmall">r/Rainmeter</p>
+			</a>
 		</li>
 	</ol>
-	<ol>
+	<div class="bg-dark-gray h-one-pixel w-full"></div>
+	<ol class="flex flex-col gap-4">
+		<li class="flex justify-between items-center">
+			<p class="text-gray text-bodySmall">COMMUNITIES</p>
+			<my-icons-up-arrow></cmy-icons-up-arrow>
+		</li>
+		<li>
+			<a
+				href="https://www.reddit.com/"
+				class="flex flex-row items-center gap-3"
+			>
+				<my-icons-plus></my-icons-plus>
+				<p class="text-bodySmall">Create a community</p>
+			</a>
+		</li>
+		<li>
+			<a
+				href="https://www.reddit.com/r/globaloffensive/"
+				class="flex flex-row items-center gap-3"
+			>
+				<img
+					class="rounded-full"
+					loading="lazy"
+					width="32"
+					height="32"
+					aria-hidden="true"
+					alt=""
+					src="https://styles.redditmedia.com/t5_2sqho/styles/communityIcon_npeov434gu2e1.png?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=e8070927b0435904b7c4063318fd16723e2debaa"
+				/>
+				<p class="text-bodySmall">r/GlobalOffensive</p>
+			</a>
+		</li>
+		<li>
+			<a
+				href="https://www.reddit.com/r/tf2/"
+				class="flex flex-row items-center gap-3"
+			>
+				<img
+					class="rounded-full"
+					loading="lazy"
+					width="32"
+					height="32"
+					aria-hidden="true"
+					alt=""
+					src="https://styles.redditmedia.com/t5_2qka0/styles/communityIcon_um711ahh3g431.png"
+				/>
+				<p class="text-bodySmall">r/tf2</p>
+			</a>
+		</li>
+	</ol>
+	<div class="bg-dark-gray h-one-pixel w-full"></div>
+	<ol class="flex flex-col gap-4">
 		<li class="flex justify-between items-center">
 			<p class="text-gray text-bodySmall">RESOURCES</p>
 			<my-icons-up-arrow></my-icons-up-arrow>
 		</li>
+		<li>
+			<a
+				href="https://www.reddit.com/about/"
+				class="flex flex-row items-center gap-3"
+			>
+				<my-icons-about></my-icons-about>
+				<p class="text-bodySmall">About Reddit</p>
+			</a>
+		</li>
+		<li>
+			<a
+				href="https://www.reddit.com/advertise/"
+				class="flex flex-row items-center gap-3"
+			>
+				<my-icons-advertise></my-icons-advertise>
+				<p class="text-bodySmall">Advertise</p>
+			</a>
+		</li>
+		<li>
+			<a
+				href="https://www.reddit.com/help/"
+				class="flex flex-row items-center gap-3"
+			>
+				<my-icons-help></my-icons-help>
+				<p class="text-bodySmall">Help</p>
+			</a>
+		</li>
+		<li>
+			<a
+				href="https://www.reddit.com/blog/"
+				class="flex flex-row items-center gap-3"
+			>
+				<my-icons-blog></my-icons-blog>
+				<p class="text-bodySmall">Blog</p>
+			</a>
+		</li>
+		<li>
+			<a
+				href="https://www.reddit.com/careers/"
+				class="flex flex-row items-center gap-3"
+			>
+				<my-icons-careers></my-icons-careers>
+				<p class="text-bodySmall">Careers</p>
+			</a>
+		</li>
+		<li>
+			<a
+				href="https://www.reddit.com/press/"
+				class="flex flex-row items-center gap-3"
+			>
+				<my-icons-press></my-icons-press>
+				<p class="text-bodySmall">Press</p>
+			</a>
+		</li>
+		<hr class="border-dark-gray" />
+		<li>
+			<a
+				href="https://www.reddit.com/r/communities/"
+				class="flex flex-row items-center gap-3"
+			>
+				<my-icons-communities></my-icons-communities>
+				<p class="text-bodySmall">Communities</p>
+			</a>
+		</li>
+		<li>
+			<a
+				href="https://www.reddit.com/best/"
+				class="flex flex-row items-center gap-3"
+			>
+				<my-icons-best-of></my-icons-best-of>
+				<p class="text-bodySmall">Best of Reddit</p>
+			</a>
+		</li>
+		<li>
+			<a
+				href="https://www.reddit.com/topics/"
+				class="flex flex-row items-center gap-3"
+			>
+				<my-icons-topics></my-icons-topics>
+				<p class="text-bodySmall">Topics</p>
+			</a>
+		</li>
+		<hr class="border-dark-gray" />
+		<li>
+			<a
+				href="https://www.reddit.com/policies/content-policy/"
+				class="flex flex-row items-center gap-3"
+			>
+				<my-icons-content-policy></my-icons-content-policy>
+				<p class="text-bodySmall">Content Policy</p>
+			</a>
+		</li>
+		<li>
+			<a
+				href="https://www.reddit.com/policies/privacy-policy/"
+				class="flex flex-row items-center gap-3"
+			>
+				<my-icons-privacy-policy></my-icons-privacy-policy>
+				<p class="text-bodySmall">Privacy Policy</p>
+			</a>
+		</li>
+		<li>
+			<a
+				href="https://www.reddit.com/policies/user-agreement/"
+				class="flex flex-row items-center gap-3"
+			>
+				<my-icons-user-agreement></my-icons-user-agreement>
+				<p class="text-bodySmall">User Agreement</p>
+			</a>
+		</li>
 	</ol>
-	<ol></ol>
-	<ol></ol>
+	<div class="pt-10 grow flex flex-col justify-end">
+		<a class="text-labelSmall text-gray" href="https://redditinc.com"
+			>Reddit, Inc. © 2024. All rights reserved.</a
+		>
+	</div>
 </nav>
