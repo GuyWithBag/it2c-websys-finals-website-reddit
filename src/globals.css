@@ -2,9 +2,11 @@
 	--primary: #ff4500;
 	--white: #ffffff;
 	--black: #0e1113;
+	--true-black: black;
 	--dark-gray: #2a3236;
 	--light-gray: #3e4142;
 	--gray: #849ba5;
+	--blue: rgb(17, 91, 202);
 }
 body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -169,4 +171,19 @@ body {
 	padding-top: 4rem;
 	padding-left: 18rem;
 	padding-right: 18rem;
+}
+
+.text-blue {
+	color: var(--blue);
+}
+
+.bg-blue {
+	background-color: var(--blue);
+}
+.text-true-black {
+	color: var(--true-black);
+}
+
+.bg-true-black {
+	background-color: var(--true-black);
 }
