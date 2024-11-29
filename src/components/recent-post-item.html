@@ -1,0 +1,35 @@
+<!-- <div style="line-height: 1.5rem">
+	<p class="flex flex-row items-center gap-1">
+		<img
+			src="https://styles.redditmedia.com/t5_32zku/styles/communityIcon_391sqfn02xzd1.png"
+			alt="r/SwainMains icon"
+			class="mb-0 shreddit-subreddit-icon__icon rounded-full overflow-hidden nd:visible nd:bg-secondary-background text-24 leading-5 h-full w-full"
+			width="24"
+			height="24"
+			style="color: #c74238; background: #c74238; width: 24px; height: 24px"
+			loading="lazy"
+		/>
+		r/SwainMains
+	</p>
+	<p>Any modders here?</p>
+	<p>9 upvotes <span>·</span> 2 comments</p>
+</div> -->
+<div style="line-height: 1.5rem">
+	<p class="flex flex-row items-center gap-1">
+		<span
+			class="rounded-full overflow-hidden flex"
+			style="width: 24px; height: 24px"
+		>
+			<slot name="threadIcon"></slot>
+		</span>
+		<slot name="threadName"></slot>
+	</p>
+	<slot name="title"></slot>
+	<p>
+		<slot name="upvotes"></slot>
+		upvotes
+		<span>·</span>
+		<slot name="comments"></slot>
+		comments
+	</p>
+</div>
