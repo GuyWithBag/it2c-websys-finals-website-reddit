@@ -1,0 +1,93 @@
+<style>
+	.join-button {
+		background-color: rgb(17, 91, 202);
+	}
+</style>
+
+<div class="flex flex-col gap-2">
+	<div class="flex flex-row justify-between items-center">
+		<div class="flex flex-row items-center gap-1">
+			<div
+				class="rounded-full overflow-hidden flex"
+				style="width: 24px; height: 24px"
+			>
+				<!-- <img
+                    src="https://styles.redditmedia.com/t5_26o362/styles/communityIcon_qqqm883dzxs31.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48:48,smart&amp;s=1d453d2a9198c565d9be01b682218ebb01526225"
+                    alt="r/ArcaneAnimatedSeries icon"
+                    width="24"
+                    height="24"
+                    style="
+                        color: #014980;
+                        background: #014980;
+                        width: 24px;
+                        height: 24px;
+                    "
+                    loading="lazy"
+                /> -->
+				<slot name="threadIcon">threadIcon</slot>
+			</div>
+			<p class="text-bodySmall">
+				<b><slot name="threadName">r/ThreadName</slot></b>
+				•
+				<span
+					ts="2024-11-25T03:38:14.351000+0000"
+					format="short"
+					class="whitespace-nowrap text-bodySmall"
+				>
+					<slot name="date">0 days ago</slot>
+				</span>
+				•
+			</p>
+		</div>
+		<div class="flex flex-row items-center gap-1">
+			<a
+				class="text-bodySmall join-button rounded-full py-1 px-2 text-bodyMedium"
+			>
+				<b>Join</b>
+			</a>
+
+			<my-icons-more></my-icons-more>
+		</div>
+	</div>
+	<div><slot name="tag">Tag</slot></div>
+	<div><slot name="title">Title</slot></div>
+	<div class="rounded-3xl overflow-hidden size-img flex">
+		<!-- <img
+            src="https://preview.redd.it/season-2-act-3-spoilers-that-grin-v0-b0xlpnpixy2e1.jpg?width=616&amp;format=pjpg&amp;auto=webp&amp;s=22e6fb09b98a4c8a0f90805f8832f0ee7e859a78"
+            srcset="
+                https://preview.redd.it/season-2-act-3-spoilers-that-grin-v0-b0xlpnpixy2e1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=37dcfbbe70ff8a396c98ee01e6104cfc419ff104  320w,
+                https://preview.redd.it/season-2-act-3-spoilers-that-grin-v0-b0xlpnpixy2e1.jpg?width=616&amp;format=pjpg&amp;auto=webp&amp;s=22e6fb09b98a4c8a0f90805f8832f0ee7e859a78 616w
+            "
+            alt="r/ArcaneAnimatedSeries - [Season 2, Act 3 Spoilers] that grin…"
+            fetchpriority="auto"
+        /> -->
+		<slot name="image">Image here</slot>
+	</div>
+	<div class="flex flex-row gap-2">
+		<div
+			class="bg-light-gray flex flex-row items-center rounded-full p-2 text-bodySmall gap-2"
+		>
+			<my-icons-up-big-arrow></my-icons-up-big-arrow>
+			<slot name="upVotes">00.0k</slot>
+			<my-icons-down-big-arrow></my-icons-down-big-arrow>
+		</div>
+		<button
+			class="bg-light-gray flex flex-row rounded-full p-2 text-bodySmall gap-2"
+		>
+			<my-icons-empty-chat-bubble></my-icons-empty-chat-bubble>
+			<slot name="comments">00.0k</slot>
+		</button>
+		<button
+			class="bg-light-gray flex flex-row rounded-full p-2 text-bodySmall gap-2"
+		>
+			<my-icons-award></my-icons-award>
+		</button>
+		<button
+			class="bg-light-gray flex flex-row rounded-full p-2 text-bodySmall gap-2"
+		>
+			<my-icons-share></my-icons-share>
+			<p>Share</p>
+		</button>
+	</div>
+	<my-hr></my-hr>
+</div>

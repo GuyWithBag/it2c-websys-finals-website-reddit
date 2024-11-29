@@ -153,3 +153,6 @@ body {
 	font-weight: 500; /* Medium */
 	line-height: 0.875rem; /* 14px */
 }
+.h-one-pixel {
+	height: 1px;
+}
