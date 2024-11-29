@@ -31,6 +31,7 @@
         "icons/topics",
         "icons/up-arrow",
         "icons/user-agreement", 
+        "all-navigation", 
         "icons/sort", 
         "hr", 
         "icons/up-big-arrow",
@@ -38,6 +39,7 @@
         "icons/empty-chat-bubble", 
         "icons/award", 
         "icons/share", 
-        "thread-post"
+        "thread-post", 
+        "all-navigation"
     ]
 }
