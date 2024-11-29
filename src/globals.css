@@ -162,7 +162,9 @@ body {
 	font-weight: 500; /* Medium */
 	line-height: 0.875rem; /* 14px */
 }
-
+.h-one-pixel {
+	height: 1px;
+}
 .page-padding {
 	padding-top: 4rem;
 	padding-left: 18rem;
