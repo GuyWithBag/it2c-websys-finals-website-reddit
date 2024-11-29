@@ -8424,3 +8424,18 @@
 .border-l-8 {
 	border-left-width: 8px;
 }
+.static {
+	position: static;
+}
+.fixed {
+	position: fixed;
+}
+.absolute {
+	position: absolute;
+}
+.sticky {
+	position: sticky;
+}
+.relative {
+	position: relative;
+}
