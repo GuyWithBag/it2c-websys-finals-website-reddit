@@ -10,6 +10,15 @@ body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Hide default scrollbar (Optional) */
+::-webkit-scrollbar {
+	width: 8px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--light-gray);
+	border-radius: 4px;
+}
+
 .bg-red {
 	background-color: red;
 }
@@ -152,4 +161,10 @@ body {
 	font-size: 0.625rem; /* 10px */
 	font-weight: 500; /* Medium */
 	line-height: 0.875rem; /* 14px */
+}
+
+.page-padding {
+	padding-top: 4rem;
+	padding-left: 18rem;
+	padding-right: 18rem;
 }

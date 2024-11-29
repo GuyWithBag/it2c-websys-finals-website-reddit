@@ -30,6 +30,7 @@
         "icons/privacy-policy",
         "icons/topics",
         "icons/up-arrow",
-        "icons/user-agreement"
+        "icons/user-agreement", 
+        "all-navigation"
     ]
 }
