@@ -42,7 +42,6 @@ sub,
 sup,
 tt,
 var,
-b,
 u,
 i,
 center,
@@ -89,6 +88,13 @@ video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	vertical-align: baseline;
+}
+
+b {
+	margin: 0;
+	padding: 0;
+	border: 0;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
