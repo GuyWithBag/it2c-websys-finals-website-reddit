@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Reddit</title>
+		<link rel="stylesheet" href="../css-reset.css" />
+		<link rel="stylesheet" href="../vanilla-tailwind.css" />
+		<link rel="stylesheet" href="../globals.css" />
+		<script type="module" src="../index.js"></script>
+	</head>
+	<body>
+		<my-all-navigation></my-all-navigation>
+		<main class="flex flex-col bg-black text-white gap-3 page-padding">
+			<div></div>
+			<div class="flex flex-row gap-3 text-gray">
+				<button class="flex flex-row">
+					<p class="text-bodySmall">Hot</p>
+					<my-icons-up-arrow></my-icons-up-arrow>
+				</button>
+				<button class="flex flex-row">
+					<my-icons-sort></my-icons-sort>
+					<my-icons-up-arrow></my-icons-up-arrow>
+				</button>
+			</div>
+			<div class="flex flex-row justify-between items-center">
+				<div class="flex flex-row items-center gap-2">
+					<my-icons-pin></my-icons-pin>
+					<p class="text-bodySmall">Community Highlights</p>
+				</div>
+				<my-icons-up-arrow></my-icons-up-arrow>
+			</div>
+			<my-hr></my-hr>
+			<my-thread-user-post>
+				<span slot="userName">u/RakinWoah</span>
+				<span slot="date">6 hr. ago</span>
+				<p slot="title">this</p>
+				<p slot="upVotes">2.8k</p>
+				<p slot="comments">125k</p>
+				<p slot="flair">Humor</p>
+				<img
+					slot="userIcon"
+					src="https://preview.redd.it/snoovatar/avatars/af5abf23-569c-4067-b990-cdc109710d47-headshot.png?width=64&amp;height=64&amp;crop=smart&amp;auto=webp&amp;s=c54b4b6ed8684f4e8486b64ad5c54d32caa41f01"
+					alt="u/RakinWoah avatar"
+				/>
+				<img
+					slot="image"
+					alt="r/Piracy -  this"
+					src="https://preview.redd.it/2beb5j2got3e1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2fb6ba51ceaaf3a6f168ed0b0af26dceb3faf8d0"
+					srcset="
+						https://preview.redd.it/2beb5j2got3e1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=fc5baa66742e1e965e9efdc532ce08e77232ee3e   320w,
+						https://preview.redd.it/2beb5j2got3e1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2fb6ba51ceaaf3a6f168ed0b0af26dceb3faf8d0   640w,
+						https://preview.redd.it/2beb5j2got3e1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=d0654e1640b684c6bb6d55b3b902e02c02087b76 1080w,
+						https://preview.redd.it/2beb5j2got3e1.png?auto=webp&amp;s=adcf21d801614c90bea097196bb71ce8238e0748                               1080w
+					"
+				/>
+			</my-thread-user-post>
+		</main>
+	</body>
+</html>
