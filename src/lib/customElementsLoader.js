@@ -45,16 +45,31 @@ export async function registerComponents() {
 			}
 
 			async connectedCallback() {
-				// Create the template with styles and HTML content
+				// Grab all children with a `slot` attribute
+				// Parse the HTML and inject it into the element
 				const template = document.createElement("template");
 				template.innerHTML = `${htmlText}`;
-				// console.log(template.innerHTML);
+				const content = template.content.cloneNode(true);
 
-				// Append the content directly to the element (no Shadow DOM)
-				this.appendChild(template.content.cloneNode(true));
+				// Replace <slot> elements with children that have matching slot attributes
+				const slots = content.querySelectorAll("slot");
+				slots.forEach((slot) => {
+					const slotName = slot.getAttribute("name");
+					const replacement = this.querySelector(`[slot="${slotName}"]`);
+					// console.log(replacement);
+					if (replacement) {
+						// Use parentNode.replaceChild for compatibility
+						slot.parentNode.replaceChild(replacement.cloneNode(true), slot);
+						replacement.remove();
+					} else {
+						// Keep default content if no replacement is provided
+						const defaultText = document.createTextNode(slot.innerHTML || "");
+						slot.parentNode.replaceChild(defaultText, slot);
+					}
+				});
 
-				// Perform any additional setup if necessary
-				// console.log(`${customElementName} initialized`);
+				// Append the processed content to the element
+				this.appendChild(content);
 			}
 
 			disconnectedCallback() {
@@ -70,19 +85,17 @@ export async function registerComponents() {
 }
 
 async function _fetchComponentList() {
-	try {
-		// Fetch the JSON file
-		const response = await fetch(`${componentsPath}index.json`); // Adjust the path as needed
-		if (!response.ok) {
-			throw new Error(`HTTP error! status: ${response.status}`);
-		}
-
-		// Parse the JSON
-		const data = await response.json();
-		console.log("Fetched component directories:", data.components);
-		return data.components;
-	} catch (error) {
-		console.error("Error fetching components directories:", error);
-		return [];
+	// Fetch the JSON file
+	componentsPath = "./components/";
+	let response = await fetch(`${componentsPath}index.json`); // Adjust the path as needed
+	if (!response.ok) {
+		// console.log("FUCK");
+		componentsPath = "../components/";
+		response = await fetch(`${componentsPath}index.json`);
 	}
+
+	// Parse the JSON
+	const data = await response.json();
+	console.log("Fetched component directories:", data.components);
+	return data.components;
 }
