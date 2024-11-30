@@ -43,6 +43,10 @@
         "thread-user-post", 
         "recent-posts",
         "recent-post-item", 
-        "icons/pin"
+        "icons/pin", 
+        "icons/cake", 
+        "icons/globe", 
+        "icons/user-profile",
+        "icons/mail"
     ]
 }
