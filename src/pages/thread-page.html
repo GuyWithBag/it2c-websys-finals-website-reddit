@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Reddit</title>
+		<link rel="stylesheet" href="../css-reset.css" />
+		<link rel="stylesheet" href="../vanilla-tailwind.css" />
+		<link rel="stylesheet" href="../globals.css" />
+		<script type="module" src="../index.js"></script>
+		<style>
+			.thread-page-padding {
+				padding-top: 5rem;
+				padding-left: 23rem;
+				padding-right: 10rem;
+			}
+		</style>
+	</head>
+	<body>
+		<my-all-navigation></my-all-navigation>
+		<main class="flex flex-col bg-black text-white gap-3 thread-page-padding">
+			<div>
+				<div class="w-full flex flex-col gap-3 z-30">
+					<img
+						class="object-cover w-full rounded-md"
+						src="https://styles.redditmedia.com/t5_2qmox/styles/bannerBackgroundImage_hjuavt6lntud1.png?width=2176&amp;frame=1&amp;auto=webp&amp;s=caa7f86a07ca91265240bb26d268351cd20df62e"
+					/>
+					<div class="flex flex-row justify-between items-center relative z-30">
+						<img
+							src="https://styles.redditmedia.com/t5_2qmox/styles/communityIcon_r6keaskpkp8c1.png"
+							alt="r/Piracy icon"
+							class="border-4 border-black rounded-full border-solid h-21 absolute left-3 bottom-1"
+							style="color: #182d40; background: #182d40"
+							loading="lazy"
+						/>
+						<p class="text-titleLarge ml-26">r/Piracy</p>
+						<div class="flex flex-row gap-4 items-center z-30">
+							<button
+								class="flex flex-row gap-2 items-center border-1 border-solid border-white rounded-full p-2"
+							>
+								<my-icons-plus></my-icons-plus>
+								<p class="text-bodySmall">Create Post</p>
+							</button>
+							<button
+								class="text-bodySmall p-3 rounded-full"
+								style="background-color: rgb(45, 78, 108)"
+							>
+								Join
+							</button>
+							<button
+								class="border-1 border-solid border-white p-2 rounded-full"
+							>
+								<my-icons-more></my-icons-more>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-row gap-4">
+				<div class="flex flex-col gap-4 z-30">
+					<div class="flex flex-row gap-3 text-gray">
+						<button class="flex flex-row">
+							<p class="text-bodySmall">Hot</p>
+							<my-icons-up-arrow></my-icons-up-arrow>
+						</button>
+						<button class="flex flex-row">
+							<my-icons-sort></my-icons-sort>
+							<my-icons-up-arrow></my-icons-up-arrow>
+						</button>
+					</div>
+					<div class="flex flex-row justify-between items-center">
+						<div class="flex flex-row items-center gap-2">
+							<my-icons-pin></my-icons-pin>
+							<p class="text-bodySmall">Community Highlights</p>
+						</div>
+						<button>
+							<my-icons-up-arrow></my-icons-up-arrow>
+						</button>
+					</div>
+					<div class="flex flex-row gap-3 h-30">
+						<div
+							class="flex flex-row gap-2 rounded-xl border-1 border-solid border-dark-gray p-3"
+						>
+							<img
+								class="rounded-xl"
+								src="https://external-preview.redd.it/weekly-general-discussion-thread-november-24-2024-v0-wBOHVDlego4fPj-mc6lVrcM-6a3PzxfJMCbgVKetwGc.jpg?width=320&crop=smart&auto=webp&s=8944ccd966118c92eb0e9d9417e51b501a538f8d"
+							/>
+							<div>
+								<p class="text-bodyMedium">
+									Weekly General Discussion Thread...
+								</p>
+								<div class="flex flex-col text-bodySmall text-gray">
+									<span>
+										<span>11</span>
+										<span>votes</span>
+										<span>•</span>
+										<span>71</span>
+										<span>comments</span>
+									</span>
+									<span>
+										<img
+											src="https://styles.redditmedia.com/t5_1yz875/styles/profileIcon_klqlly9fc4l41.png?width=64&amp;height=64&amp;frame=1&amp;auto=webp&amp;crop=64:64,smart&amp;s=d2d22c53cc8b2756dc0cfabd790128c50c94a74d"
+											alt="AutoModerator"
+											class="h-6"
+										/>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div
+							class="flex flex-row gap-2 rounded-xl border-1 border-solid border-dark-gray p-3"
+						>
+							<div>
+								<p class="text-bodyMedium">
+									Piracy Wiki - Megathread of pirate sites / apps / tools / FAQ
+									/ guides (and...
+								</p>
+								<div class="flex flex-col text-bodySmall text-gray">
+									<span>
+										<span>1.2k</span>
+										<span>votes</span>
+										<span>•</span>
+										<span>908</span>
+										<span>comments</span>
+									</span>
+									<span>
+										<img
+											src="https://styles.redditmedia.com/t5_1yz875/styles/profileIcon_klqlly9fc4l41.png?width=64&amp;height=64&amp;frame=1&amp;auto=webp&amp;crop=64:64,smart&amp;s=d2d22c53cc8b2756dc0cfabd790128c50c94a74d"
+											alt="AutoModerator"
+											class="h-6"
+										/>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<my-hr></my-hr>
+					<my-thread-user-post>
+						<span slot="userName">u/RakinWoah</span>
+						<span slot="date">6 hr. ago</span>
+						<p slot="title">this</p>
+						<p slot="upVotes">2.8k</p>
+						<p slot="comments">125k</p>
+						<p slot="flair">Humor</p>
+						<img
+							slot="userIcon"
+							src="https://preview.redd.it/snoovatar/avatars/af5abf23-569c-4067-b990-cdc109710d47-headshot.png?width=64&amp;height=64&amp;crop=smart&amp;auto=webp&amp;s=c54b4b6ed8684f4e8486b64ad5c54d32caa41f01"
+							alt="u/RakinWoah avatar"
+						/>
+						<img
+							slot="image"
+							alt="r/Piracy -  this"
+							src="https://preview.redd.it/2beb5j2got3e1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2fb6ba51ceaaf3a6f168ed0b0af26dceb3faf8d0"
+							srcset="
+								https://preview.redd.it/2beb5j2got3e1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=fc5baa66742e1e965e9efdc532ce08e77232ee3e   320w,
+								https://preview.redd.it/2beb5j2got3e1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2fb6ba51ceaaf3a6f168ed0b0af26dceb3faf8d0   640w,
+								https://preview.redd.it/2beb5j2got3e1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=d0654e1640b684c6bb6d55b3b902e02c02087b76 1080w,
+								https://preview.redd.it/2beb5j2got3e1.png?auto=webp&amp;s=adcf21d801614c90bea097196bb71ce8238e0748                               1080w
+							"
+						/>
+					</my-thread-user-post>
+					<my-hr></my-hr>
+					<my-thread-user-post>
+						<span slot="userName">u/RakinWoah</span>
+						<span slot="date">6 hr. ago</span>
+						<p slot="title">this</p>
+						<p slot="upVotes">2.8k</p>
+						<p slot="comments">125k</p>
+						<p slot="flair">Humor</p>
+						<img
+							slot="userIcon"
+							src="https://preview.redd.it/snoovatar/avatars/af5abf23-569c-4067-b990-cdc109710d47-headshot.png?width=64&amp;height=64&amp;crop=smart&amp;auto=webp&amp;s=c54b4b6ed8684f4e8486b64ad5c54d32caa41f01"
+							alt="u/RakinWoah avatar"
+						/>
+						<img
+							slot="image"
+							alt="r/Piracy -  this"
+							src="https://preview.redd.it/2beb5j2got3e1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2fb6ba51ceaaf3a6f168ed0b0af26dceb3faf8d0"
+							srcset="
+								https://preview.redd.it/2beb5j2got3e1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=fc5baa66742e1e965e9efdc532ce08e77232ee3e   320w,
+								https://preview.redd.it/2beb5j2got3e1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2fb6ba51ceaaf3a6f168ed0b0af26dceb3faf8d0   640w,
+								https://preview.redd.it/2beb5j2got3e1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=d0654e1640b684c6bb6d55b3b902e02c02087b76 1080w,
+								https://preview.redd.it/2beb5j2got3e1.png?auto=webp&amp;s=adcf21d801614c90bea097196bb71ce8238e0748                               1080w
+							"
+						/>
+					</my-thread-user-post>
+					<my-hr></my-hr>
+					<my-thread-user-post>
+						<span slot="userName">u/RakinWoah</span>
+						<span slot="date">6 hr. ago</span>
+						<p slot="title">this</p>
+						<p slot="upVotes">2.8k</p>
+						<p slot="comments">125k</p>
+						<p slot="flair">Humor</p>
+						<img
+							slot="userIcon"
+							src="https://preview.redd.it/snoovatar/avatars/af5abf23-569c-4067-b990-cdc109710d47-headshot.png?width=64&amp;height=64&amp;crop=smart&amp;auto=webp&amp;s=c54b4b6ed8684f4e8486b64ad5c54d32caa41f01"
+							alt="u/RakinWoah avatar"
+						/>
+						<img
+							slot="image"
+							alt="r/Piracy -  this"
+							src="https://preview.redd.it/2beb5j2got3e1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2fb6ba51ceaaf3a6f168ed0b0af26dceb3faf8d0"
+							srcset="
+								https://preview.redd.it/2beb5j2got3e1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=fc5baa66742e1e965e9efdc532ce08e77232ee3e   320w,
+								https://preview.redd.it/2beb5j2got3e1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2fb6ba51ceaaf3a6f168ed0b0af26dceb3faf8d0   640w,
+								https://preview.redd.it/2beb5j2got3e1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=d0654e1640b684c6bb6d55b3b902e02c02087b76 1080w,
+								https://preview.redd.it/2beb5j2got3e1.png?auto=webp&amp;s=adcf21d801614c90bea097196bb71ce8238e0748                               1080w
+							"
+						/>
+					</my-thread-user-post>
+					<my-hr></my-hr>
+					<my-thread-user-post>
+						<span slot="userName">u/RakinWoah</span>
+						<span slot="date">6 hr. ago</span>
+						<p slot="title">this</p>
+						<p slot="upVotes">2.8k</p>
+						<p slot="comments">125k</p>
+						<p slot="flair">Humor</p>
+						<img
+							slot="userIcon"
+							src="https://preview.redd.it/snoovatar/avatars/af5abf23-569c-4067-b990-cdc109710d47-headshot.png?width=64&amp;height=64&amp;crop=smart&amp;auto=webp&amp;s=c54b4b6ed8684f4e8486b64ad5c54d32caa41f01"
+							alt="u/RakinWoah avatar"
+						/>
+						<img
+							slot="image"
+							alt="r/Piracy -  this"
+							src="https://preview.redd.it/2beb5j2got3e1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2fb6ba51ceaaf3a6f168ed0b0af26dceb3faf8d0"
+							srcset="
+								https://preview.redd.it/2beb5j2got3e1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=fc5baa66742e1e965e9efdc532ce08e77232ee3e   320w,
+								https://preview.redd.it/2beb5j2got3e1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2fb6ba51ceaaf3a6f168ed0b0af26dceb3faf8d0   640w,
+								https://preview.redd.it/2beb5j2got3e1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=d0654e1640b684c6bb6d55b3b902e02c02087b76 1080w,
+								https://preview.redd.it/2beb5j2got3e1.png?auto=webp&amp;s=adcf21d801614c90bea097196bb71ce8238e0748                               1080w
+							"
+						/>
+					</my-thread-user-post>
+					<my-hr></my-hr>
+					<my-thread-user-post>
+						<span slot="userName">u/RakinWoah</span>
+						<span slot="date">6 hr. ago</span>
+						<p slot="title">this</p>
+						<p slot="upVotes">2.8k</p>
+						<p slot="comments">125k</p>
+						<p slot="flair">Humor</p>
+						<img
+							slot="userIcon"
+							src="https://preview.redd.it/snoovatar/avatars/af5abf23-569c-4067-b990-cdc109710d47-headshot.png?width=64&amp;height=64&amp;crop=smart&amp;auto=webp&amp;s=c54b4b6ed8684f4e8486b64ad5c54d32caa41f01"
+							alt="u/RakinWoah avatar"
+						/>
+						<img
+							slot="image"
+							alt="r/Piracy -  this"
+							src="https://preview.redd.it/2beb5j2got3e1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2fb6ba51ceaaf3a6f168ed0b0af26dceb3faf8d0"
+							srcset="
+								https://preview.redd.it/2beb5j2got3e1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=fc5baa66742e1e965e9efdc532ce08e77232ee3e   320w,
+								https://preview.redd.it/2beb5j2got3e1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2fb6ba51ceaaf3a6f168ed0b0af26dceb3faf8d0   640w,
+								https://preview.redd.it/2beb5j2got3e1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=d0654e1640b684c6bb6d55b3b902e02c02087b76 1080w,
+								https://preview.redd.it/2beb5j2got3e1.png?auto=webp&amp;s=adcf21d801614c90bea097196bb71ce8238e0748                               1080w
+							"
+						/>
+					</my-thread-user-post>
+					<my-hr></my-hr>
+					<my-thread-user-post>
+						<span slot="userName">u/RakinWoah</span>
+						<span slot="date">6 hr. ago</span>
+						<p slot="title">this</p>
+						<p slot="upVotes">2.8k</p>
+						<p slot="comments">125k</p>
+						<p slot="flair">Humor</p>
+						<img
+							slot="userIcon"
+							src="https://preview.redd.it/snoovatar/avatars/af5abf23-569c-4067-b990-cdc109710d47-headshot.png?width=64&amp;height=64&amp;crop=smart&amp;auto=webp&amp;s=c54b4b6ed8684f4e8486b64ad5c54d32caa41f01"
+							alt="u/RakinWoah avatar"
+						/>
+						<img
+							slot="image"
+							alt="r/Piracy -  this"
+							src="https://preview.redd.it/2beb5j2got3e1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2fb6ba51ceaaf3a6f168ed0b0af26dceb3faf8d0"
+							srcset="
+								https://preview.redd.it/2beb5j2got3e1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=fc5baa66742e1e965e9efdc532ce08e77232ee3e   320w,
+								https://preview.redd.it/2beb5j2got3e1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=2fb6ba51ceaaf3a6f168ed0b0af26dceb3faf8d0   640w,
+								https://preview.redd.it/2beb5j2got3e1.png?width=1080&amp;crop=smart&amp;auto=webp&amp;s=d0654e1640b684c6bb6d55b3b902e02c02087b76 1080w,
+								https://preview.redd.it/2beb5j2got3e1.png?auto=webp&amp;s=adcf21d801614c90bea097196bb71ce8238e0748                               1080w
+							"
+						/>
+					</my-thread-user-post>
+					<my-hr></my-hr>
+				</div>
+				<div class="overflow-y-scroll w-96 h-screen top-18 sticky z-30">
+					<div
+						class="bg-true-black rounded-xl text-bodySmall p-3 flex flex-col gap-2"
+					>
+						<p><b>Piracy: SAIL THE HIGH SEAS</b></p>
+						<p>
+							⚓ Dedicated to the discussion of digital piracy, including
+							ethical problems and legal advancements.
+						</p>
+						<p class="flex flex-row gap-2">
+							<my-icons-cake></my-icons-cake>
+							<span>Created Sep 20, 2008</span>
+						</p>
+						<p class="flex flex-row gap-2">
+							<my-icons-globe></my-icons-globe>
+							<span>Public</span>
+						</p>
+						<div class="flex flex-row justify-between">
+							<div>
+								<p><b>1.9M</b></p>
+								<p>Members</p>
+							</div>
+							<div>
+								<p><b>1.8k</b></p>
+								<p>Online</p>
+							</div>
+						</div>
+						<my-hr></my-hr>
+						<p>USER FLAIR</p>
+						<p class="flex flex-row items-center gap-2">
+							<span><my-icons-user-profile></my-icons-user-profile></span>
+							<span>GreenReddister123</span>
+						</p>
+						<my-hr></my-hr>
+						<p>COMMUNITY BOOKMARKS</p>
+						<a class="bg-dark-gray rounded-full p-2 flex center">Wiki</a>
+						<a class="bg-dark-gray rounded-full p-2 flex center"
+							>📜 Megathread</a
+						>
+						<a class="bg-dark-gray rounded-full p-2 flex center">🪶 FAQ</a>
+						<a class="bg-dark-gray rounded-full p-2 flex center"
+							>🪶 ISP Complaints</a
+						>
+						<a class="bg-dark-gray rounded-full p-2 flex center">🪶 Rules</a>
+						<a class="bg-dark-gray rounded-full p-2 flex center"
+							>💀 Fallback Forum</a
+						>
+						<my-hr></my-hr>
+						<p>RULES</p>
+						<ol class="py-5 px-10" style="list-style: decimal">
+							<li>
+								<div class="flex flex-row justify-between items-center">
+									<p>
+										Posts must be related to the discussion of digital piracy
+									</p>
+									<my-icons-up-arrow></my-icons-up-arrow>
+								</div>
+							</li>
+						</ol>
+						<my-hr></my-hr>
+						<p>AHOY!</p>
+						<img
+							src="https://styles.redditmedia.com/t5_2qmox/styles/image_widget_ii6dsz6az5oc1.png"
+							alt=""
+							loading="lazy"
+							class="h-auto w-full max-w-full"
+						/>
+
+						<p>Loot, Pillage, & Plunder</p>
+						<a class="bg-dark-gray rounded-full p-2 flex center">Wiki</a>
+						<a class="bg-dark-gray rounded-full p-2 flex center"
+							>📜 Megathread</a
+						>
+						<a class="bg-dark-gray rounded-full p-2 flex center">🪶 FAQ</a>
+						<a class="bg-dark-gray rounded-full p-2 flex center"
+							>🪶 ISP Complaints</a
+						>
+						<a class="bg-dark-gray rounded-full p-2 flex center">🪶 Rules</a>
+						<a class="bg-dark-gray rounded-full p-2 flex center"
+							>💀 Fallback Forum</a
+						>
+						<my-hr></my-hr>
+						<p>VOYAGE</p>
+						<div class="flex flex-wrap">
+							<button
+								class="py-3 px-4 rounded-full flex center"
+								style="background-color: rgb(24, 45, 64)"
+							>
+								Discussion
+							</button>
+							<button
+								class="py-3 px-4 rounded-full flex center"
+								style="background-color: rgb(24, 45, 64)"
+							>
+								Guide
+							</button>
+							<button
+								class="py-3 px-4 rounded-full flex center"
+								style="background-color: rgb(24, 45, 64)"
+							>
+								Humor
+							</button>
+							<button
+								class="py-3 px-4 rounded-full flex center"
+								style="background-color: rgb(24, 45, 64)"
+							>
+								News
+							</button>
+							<button
+								class="py-3 px-4 rounded-full flex center"
+								style="background-color: rgb(24, 45, 64)"
+							>
+								Question
+							</button>
+							<button
+								class="py-3 px-4 rounded-full flex center"
+								style="background-color: rgb(24, 45, 64)"
+							>
+								Self Promotion
+							</button>
+						</div>
+						<my-hr></my-hr>
+						<p>OUR SAILING PARTNERS</p>
+						<div class="flex flex-col gap-5 px-5 py-4">
+							<div class="flex flex-row items-center gap-2">
+								<img
+									src="https://styles.redditmedia.com/t5_3nyco/styles/communityIcon_gdxeit78o3a61.jpg?format=pjpg&amp;s=0f73d73dd3714f28dfa36206c4c78000f48ce9da"
+									alt="r/animepiracy icon"
+									class="mb-0 shreddit-subreddit-icon__icon rounded-full overflow-hidden nd:visible nd:bg-secondary-background"
+									style="width: 32px; height: 32px"
+									loading="lazy"
+								/>
+								<div>
+									<p>r/animepiracy</p>
+									<p>245,038 members</p>
+								</div>
+							</div>
+							<div class="flex flex-row items-center gap-2">
+								<img
+									src="https://styles.redditmedia.com/t5_3nyco/styles/communityIcon_gdxeit78o3a61.jpg?format=pjpg&amp;s=0f73d73dd3714f28dfa36206c4c78000f48ce9da"
+									alt="r/animepiracy icon"
+									class="mb-0 shreddit-subreddit-icon__icon rounded-full overflow-hidden nd:visible nd:bg-secondary-background"
+									style="width: 32px; height: 32px"
+									loading="lazy"
+								/>
+								<div>
+									<p>r/animepiracy</p>
+									<p>245,038 members</p>
+								</div>
+							</div>
+							<div class="flex flex-row items-center gap-2">
+								<img
+									src="https://styles.redditmedia.com/t5_3nyco/styles/communityIcon_gdxeit78o3a61.jpg?format=pjpg&amp;s=0f73d73dd3714f28dfa36206c4c78000f48ce9da"
+									alt="r/animepiracy icon"
+									class="mb-0 shreddit-subreddit-icon__icon rounded-full overflow-hidden nd:visible nd:bg-secondary-background"
+									style="width: 32px; height: 32px"
+									loading="lazy"
+								/>
+								<div>
+									<p>r/animepiracy</p>
+									<p>245,038 members</p>
+								</div>
+							</div>
+						</div>
+						<my-hr></my-hr>
+						<p>MODERATORS</p>
+						<ol class="flex flex-col gap-2 py-5 px-3">
+							<li>
+								<div class="flex flex-row items-center gap-2">
+									<my-icons-user-profile></my-icons-user-profile>
+									<p>u/sunbrothersco</p>
+								</div>
+							</li>
+							<li>
+								<div class="flex flex-row items-center gap-2">
+									<my-icons-user-profile></my-icons-user-profile>
+									<p>u/sunbrothersco</p>
+								</div>
+							</li>
+							<li>
+								<div class="flex flex-row items-center gap-2">
+									<my-icons-user-profile></my-icons-user-profile>
+									<p>u/sunbrothersco</p>
+								</div>
+							</li>
+							<li>
+								<div class="flex flex-row items-center gap-2">
+									<my-icons-user-profile></my-icons-user-profile>
+									<p>u/sunbrothersco</p>
+								</div>
+							</li>
+							<li>
+								<div class="flex flex-row items-center gap-2">
+									<my-icons-user-profile></my-icons-user-profile>
+									<p>u/sunbrothersco</p>
+								</div>
+							</li>
+						</ol>
+						<button class="flex center bg-light-gray py-1 w-full rounded-full">
+							<p class="flex center gap-1">
+								<span><my-icons-mail></my-icons-mail></span>
+								<span>Message the mods</span>
+							</p>
+						</button>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

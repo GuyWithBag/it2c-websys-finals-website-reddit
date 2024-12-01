@@ -40,10 +40,16 @@
         "icons/award", 
         "icons/share", 
         "thread-post", 
+        "thread-user-post", 
         "recent-posts",
         "recent-post-item", 
         "icons/avatar",
         "icons/moderation", 
-        "profile-right-sidebar"
+        "profile-right-sidebar", 
+        "icons/pin", 
+        "icons/cake", 
+        "icons/globe", 
+        "icons/user-profile",
+        "icons/mail"
     ]
 }
