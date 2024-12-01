@@ -41,6 +41,9 @@
         "icons/share", 
         "thread-post", 
         "recent-posts",
-        "recent-post-item"
+        "recent-post-item", 
+        "icons/avatar",
+        "icons/moderation", 
+        "profile-right-sidebar"
     ]
 }
