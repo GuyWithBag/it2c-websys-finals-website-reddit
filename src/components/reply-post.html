@@ -1,0 +1,42 @@
+<div class="mt-5">
+	<div class="flex flex-row gap-3">
+		<div class="rounded-full overflow-hidden w-8 h-8 flex">
+			<slot name="threadIcon"></slot>
+		</div>
+
+		<div class="flex flex-col text-bodySmall gap-2">
+			<!-- <p>r/tf2<span> • </span><span>Valve needs to add this!</span></p> -->
+			<p>
+				<slot name="subreddit"></slot><span> • </span
+				><span><slot name="title"></slot></span>
+			</p>
+			<p class="mt-2">
+				<!-- <b>GreenReddister123</b><span>Commented 6 yrs. ago</span> -->
+				<b><slot name="user"></slot></b><span><slot name="date"></slot></span>
+			</p>
+			<p class="mt-2"><slot name="body"></slot></p>
+			<div class="flex flex-row gap-6">
+				<div class="flex flex-row gap-2">
+					<my-icons-colored-up-big-arrow
+						class="text-primary"
+					></my-icons-colored-up-big-arrow>
+					<p><slot name="upvotes"></slot></p>
+					<my-icons-up-big-arrow></my-icons-up-big-arrow>
+				</div>
+
+				<div class="flex flex-row gap-2">
+					<my-icons-empty-chat-bubble></my-icons-empty-chat-bubble>
+					<p>Reply</p>
+				</div>
+				<div class="flex flex-row gap-2">
+					<my-icons-share></my-icons-share>
+					<p>Share</p>
+				</div>
+				<my-icons-more></my-icons-more>
+			</div>
+		</div>
+	</div>
+	<div class="mt-5">
+		<my-hr></my-hr>
+	</div>
+</div>

@@ -3,7 +3,8 @@
         "button", 
         "tutorial", 
         "nested-tutorial/tutorial", 
-        "navbar/navbar", 
+        "navbar/navbar",  
+        "navbar/selected-page",  
         "icons/more",
         "icons/reddit", 
         "icons/reddit-title",
@@ -43,10 +44,18 @@
         "thread-user-post", 
         "recent-posts",
         "recent-post-item", 
+        "icons/avatar",
+        "icons/moderation", 
+        "profile-right-sidebar", 
         "icons/pin", 
         "icons/cake", 
         "icons/globe", 
         "icons/user-profile",
-        "icons/mail"
+        "icons/mail", 
+        "icons/colored-up-big-arrow", 
+        "icons/circle-close", 
+        "reply-post",
+        "icons/plus-camera", 
+        "profile-page-template"
     ]
 }

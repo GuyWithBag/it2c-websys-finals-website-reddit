@@ -44,8 +44,15 @@ export async function registerComponents() {
 				super(); // Always call the parent class constructor
 			}
 
-			async connectedCallback() {
-				// Grab all children with a `slot` attribute
+			connectedCallback() {
+				// Check if content has already been appended to avoid duplication
+				if (this.hasAttribute("initialized")) {
+					console.warn(
+						`Component ${customElementName} is already initialized.`
+					);
+					return; // Prevent duplication
+				}
+
 				// Parse the HTML and inject it into the element
 				const template = document.createElement("template");
 				template.innerHTML = `${htmlText}`;
@@ -56,13 +63,10 @@ export async function registerComponents() {
 				slots.forEach((slot) => {
 					const slotName = slot.getAttribute("name");
 					const replacement = this.querySelector(`[slot="${slotName}"]`);
-					// console.log(replacement);
 					if (replacement) {
-						// Use parentNode.replaceChild for compatibility
 						slot.parentNode.replaceChild(replacement.cloneNode(true), slot);
 						replacement.remove();
 					} else {
-						// Keep default content if no replacement is provided
 						const defaultText = document.createTextNode(slot.innerHTML || "");
 						slot.parentNode.replaceChild(defaultText, slot);
 					}
@@ -70,11 +74,13 @@ export async function registerComponents() {
 
 				// Append the processed content to the element
 				this.appendChild(content);
+
+				// Mark this component as initialized to prevent duplication
+				this.setAttribute("initialized", "true");
 			}
 
 			disconnectedCallback() {
-				// Cleanup logic if needed (e.g., removing event listeners)
-				// console.log(`${customElementName} removed from the DOM`);
+				console.log(`${customElementName} removed from the DOM`);
 			}
 		}
 
