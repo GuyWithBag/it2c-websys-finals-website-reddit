@@ -7,18 +7,29 @@
 		<link rel="stylesheet" href="../css-reset.css" />
 		<link rel="stylesheet" href="../vanilla-tailwind.css" />
 		<link rel="stylesheet" href="../globals.css" />
-		<link rel="stylesheet" href="style1.css" />
 		<script type="module" src="../index.js"></script>
-		<script src="https://cdn.tailwindcss.com"></script>
-		<link
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-			rel="stylesheet"
-		/>
 	</head>
 	<body>
-		<my-all-navigation>
-			<my-profile-right-sidebar slot="right-sidebar"></my-profile-right-sidebar>
-		</my-all-navigation>
-		<main></main>
+		<my-profile-page-template>
+			<div slot="body" class="flex flex-col gap-2">
+				<my-reply-post>
+					<span slot="title"
+						>Valve needs to add this officially. Spread the word!</span
+					>
+					<img
+						src="https://styles.redditmedia.com/t5_2qka0/styles/communityIcon_um711ahh3g431.png"
+						alt="r/tf2 icon"
+						slot="threadIcon"
+					/>
+					<span slot="subreddit" z>r/tf2</span>
+					<span slot="user" z>GreenReddister123</span>
+					<span slot="date">commented 6 yrs. ago</span>
+					<span slot="body">
+						Still needs rocket/sticky/sentry jumping mechanics tho
+					</span>
+					<span slot="upvotes">1</span>
+				</my-reply-post>
+			</div>
+		</my-profile-page-template>
 	</body>
 </html>

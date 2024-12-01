@@ -1,0 +1,60 @@
+<my-all-navigation>
+	<my-profile-right-sidebar slot="right-sidebar"></my-profile-right-sidebar>
+</my-all-navigation>
+<my-navbar class="z-30 absolute w-full">
+	<my-navbar-selected-page slot="selectedPage">
+		<img
+			slot="image"
+			class="rounded-full overflow-hidden"
+			role="presentation"
+			src="https://www.redditstatic.com/avatars/defaults/v2/avatar_default_0.png"
+		/>
+		<span slot="id">u/GreenReddister</span>
+	</my-navbar-selected-page>
+	<span slot="searchText">Search in u/GreenReddister123</span>
+</my-navbar>
+<main class="flex flex-col bg-black text-white gap-4 page-padding h-screen">
+	<div class="flex flex-row items-center gap-2">
+		<div class="inline-flex center rounded-full overflow-hidden">
+			<img
+				src="https://www.redditstatic.com/avatars/defaults/v2/avatar_default_0.png"
+				alt="User Avatar"
+				class="object-contain w-16 h-16"
+			/>
+		</div>
+
+		<div>
+			<p class="text-titleMedium text-white">GreenReddister123</p>
+			<p class="text-bodyMedium text-gray">u/GreenReddister123</p>
+		</div>
+	</div>
+	<div class="flex flex-row gap-3 mt-4">
+		<a class="flex center px-4 py-2 text-bodyMedium bg-dark-gray rounded-full"
+			>Overview</a
+		>
+		<a class="flex center px-4 py-2 text-bodyMedium rounded-full">Posts</a>
+		<a class="flex center px-4 py-2 text-bodyMedium rounded-full">Comments</a>
+		<a class="flex center px-4 py-2 text-bodyMedium rounded-full">Saved</a>
+		<a class="flex center px-4 py-2 text-bodyMedium rounded-full">Hidden</a>
+		<a class="flex center px-4 py-2 text-bodyMedium rounded-full">Upvoted</a>
+		<a class="flex center px-4 py-2 text-bodyMedium rounded-full">Downvoted</a>
+	</div>
+	<div class="flex flex-row gap-3 text-gray items-center">
+		<button
+			class="items-center gap-2 flex flex-row border-gray text-white text-bodySmall border-1 border-solid rounded-full px-3 py-2"
+		>
+			<my-icons-plus></my-icons-plus>
+			<p>Create Post</p>
+		</button>
+		<button class="flex flex-row">
+			<p class="text-bodySmall">New</p>
+			<my-icons-up-arrow></my-icons-up-arrow>
+		</button>
+		<button class="flex flex-row">
+			<my-icons-sort></my-icons-sort>
+			<my-icons-up-arrow></my-icons-up-arrow>
+		</button>
+	</div>
+	<my-hr></my-hr>
+	<slot name="body"></slot>
+</main>

@@ -2,12 +2,31 @@
 	slot="right-sidebar"
 	class="h-screen overflow-y-scroll w-80 text-gray text-bodySmall"
 >
-	<div class="flex flex-col gap-3 p-5 rounded-2xl mt-10 bg-true-black">
-		<p class="text-white"><b>GreenReddister123</b></p>
-		<button class="flex flex-row items-center text-white">
-			<span><my-icons-share></my-icons-share></span>
-			<span>Share</span>
-		</button>
+	<div
+		class="flex flex-col gap-3 p-5 rounded-2xl mt-10"
+		style="
+			background: rgb(0, 0, 0);
+			background: linear-gradient(
+				0deg,
+				rgba(0, 0, 0, 1) 88%,
+				rgb(0, 69, 172) 100%
+			);
+		"
+	>
+		<div class="flex flex-row justify-end mt-8">
+			<div class="text-white rounded-full p-2 bg-light-gray">
+				<my-icons-plus-camera></my-icons-plus-camera>
+			</div>
+		</div>
+		<p class="text-white text-bodyMedium mt-4"><b>GreenReddister123</b></p>
+		<div>
+			<button
+				class="flex flex-row items-center text-white bg-dark-gray rounded-full p-2 gap-2 center"
+			>
+				<span><my-icons-share></my-icons-share></span>
+				<span>Share</span>
+			</button>
+		</div>
 		<div
 			style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px"
 		>
@@ -108,7 +127,7 @@
 		<my-hr></my-hr>
 		<p>SETTINGS</p>
 		<div class="flex flex-row justify-between items-center">
-			<div class="flex flex-row items-center">
+			<div class="flex gap-2 flex-row items-center">
 				<my-icons-user-profile></my-icons-user-profile>
 				<div class="flex flex-col">
 					<div>
@@ -122,12 +141,12 @@
 			</button>
 		</div>
 		<div class="flex flex-row justify-between items-center">
-			<div class="flex flex-row items-center">
+			<div class="flex gap-4 flex-row items-center">
 				<my-icons-avatar></my-icons-avatar>
 				<div class="flex flex-col">
 					<div>
-						<p class="text-white">Profile</p>
-						<p>Customize your profile</p>
+						<p class="text-white">Avatar</p>
+						<p>Customize and style</p>
 					</div>
 				</div>
 			</div>
@@ -136,12 +155,12 @@
 			</button>
 		</div>
 		<div class="flex flex-row justify-between items-center">
-			<div class="flex flex-row items-center">
+			<div class="flex gap-4 flex-row items-center">
 				<my-icons-moderation></my-icons-moderation>
 				<div class="flex flex-col">
 					<div>
-						<p class="text-white">Profile</p>
-						<p>Customize your profile</p>
+						<p class="text-white">Moderation</p>
+						<p>Moderation tools</p>
 					</div>
 				</div>
 			</div>

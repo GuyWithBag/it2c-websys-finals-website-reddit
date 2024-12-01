@@ -18,6 +18,18 @@
 	</head>
 	<body>
 		<my-all-navigation></my-all-navigation>
+		<my-navbar class="z-30 absolute w-full">
+			<my-navbar-selected-page slot="selectedPage">
+				<img
+					slot="image"
+					class="rounded-full overflow-hidden"
+					role="presentation"
+					src="https://styles.redditmedia.com/t5_2qmox/styles/communityIcon_r6keaskpkp8c1.png"
+				/>
+				<span slot="id">r/Piracy</span>
+			</my-navbar-selected-page>
+			<span slot="searchText">Search in r/Piracy</span>
+		</my-navbar>
 		<main class="flex flex-col bg-black text-white gap-3 thread-page-padding">
 			<div>
 				<div class="w-full flex flex-col gap-3 z-30">
