@@ -10,18 +10,47 @@
 		<script type="module" src="../index.js"></script>
 	</head>
 	<body>
-		<my-profile-page-template>
-			<div slot="body" class="flex flex-col items-center text-center p-4 gap-4">
-				<div class="w-16 h-16 bg-gray-300 rounded-full"></div>
-				<h1 class="text-xl font-bold text-gray-800">u/HiddenUser</h1>
-				<p class="text-gray-600">
-					This profile is hidden. The user has chosen to keep their activity private.
-				</p>
-				<div class="w-full border border-dashed border-gray-300 rounded-md p-4 bg-gray-100">
-					<p class="text-gray-500 italic">
-						No posts, comments, or activity to show.
-					</p>
-				</div>
+		<div slot="body" class="flex flex-col items-center text-left p-6 gap-6 max-w-4xl mx-auto">
+				<header class="w-full bg-red-500 text-white p-4 rounded-lg">
+					<h1 class="text-3xl font-bold">Reddit Content Policy</h1>
+				</header>
+				<main class="w-full bg-white shadow rounded-lg p-6">
+					<section class="mb-6">
+						<h2 class="text-2xl font-bold text-red-500 mb-2">Introduction</h2>
+						<p class="text-gray-800">
+							Reddit is a platform for creating community and belonging. We strive to make Reddit a safe, welcoming space for everyone by enforcing rules to protect our users.
+						</p>
+					</section>
+					<section class="mb-6">
+						<h2 class="text-2xl font-bold text-red-500 mb-2">Rules</h2>
+						<ul class="list-disc list-inside text-gray-800">
+							<li>Respect others and maintain civility in discussions.</li>
+							<li>Abide by subreddit-specific rules and guidelines.</li>
+							<li>Refrain from harassment, hate speech, or discrimination.</li>
+							<li>Do not engage in spamming or manipulative practices.</li>
+						</ul>
+					</section>
+					<section class="mb-6">
+						<h2 class="text-2xl font-bold text-red-500 mb-2">Consequences</h2>
+						<p class="text-gray-800">
+							Failure to comply with the Content Policy may result in:
+						</p>
+						<ul class="list-disc list-inside text-gray-800">
+							<li>Temporary or permanent account suspension.</li>
+							<li>Content removal or subreddit bans.</li>
+							<li>Further action to maintain community safety.</li>
+						</ul>
+					</section>
+					<section>
+						<h2 class="text-2xl font-bold text-red-500 mb-2">Reporting Violations</h2>
+						<p class="text-gray-800">
+							If you encounter a violation of these rules, please report it via the "Report" button or contact Reddit support directly.
+						</p>
+					</section>
+				</main>
+				<footer class="w-full text-center text-gray-600 mt-6">
+					<p>&copy; 2024 Reddit, Inc. | <a href="#" class="text-blue-500 hover:underline">Help</a> | <a href="#" class="text-blue-500 hover:underline">Privacy Policy</a> | <a href="#" class="text-blue-500 hover:underline">Terms</a></p>
+				</footer>
 			</div>
 		</my-profile-page-template>
 	</body>
