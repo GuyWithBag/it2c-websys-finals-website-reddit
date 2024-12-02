@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Reddit</title>
+		<link rel="stylesheet" href="../css-reset.css" />
+		<link rel="stylesheet" href="../vanilla-tailwind.css" />
+		<link rel="stylesheet" href="../globals.css" />
+		<script type="module" src="../index.js"></script>
+	</head>
+	<body>
+		<my-all-navigation> </my-all-navigation>
+		<main
+			class="bg-black page-padding h-screen"
+		>
+            <div class="relative z-30 flex flex-col text-white gap-3 ">
+
+                <div class="flex flex-row justify-between">
+                    <h1 class="text-titleLarge text-gray">Create post</h1>
+                    <h1 class="text-bodyMedium text-white">Drafts</h1>
+                </div>
+                <div>
+                    <button
+                        class="rounded-full px-2 py-1 z-30 text-bodyMedium flex flex-row gap-2 items-center bg-dark-gray"
+                    >
+                        <div><my-icons-user-profile></my-icons-user-profile></div>
+                        <div>u/GreenReddister123</div>
+                        <div><my-icons-up-arrow></my-icons-up-arrow></div>
+                    </button>
+                </div>
+                <div class="flex flex-row gap-6 z-30 text-bodyMedium">
+                    <button>Text</button>
+                    <button>Images & Video</button>
+                    <button>Link</button>
+                    <button>Poll</button>
+                </div>
+                <div
+                    class="text-gray text-bodySmall p-4 rounded-2xl border-dark-gray border-solid border-1"
+                >
+                    Title<span style="color: red">*</span>
+                </div>
+                <div class="flex justify-end text-bodySmall">0/300</div>
+                <div>
+                    <button class="rounded-full bg-dark-gray p-2 text-white text-bodySmall">
+                        Add tags
+                    </button>
+                </div>
+                <div
+                    class="text-gray flex flex-col text-bodySmall p-4 rounded-2xl border-dark-gray border-solid border-1"
+                >
+                    <div class="flex flex-row gap-4 items-center justify-between">
+                        <my-icons-bold></my-icons-bold>
+                        <my-icons-italic></my-icons-italic>
+                        <my-icons-strikethrough></my-icons-strikethrough>
+                        <my-icons-superscript></my-icons-superscript>
+                        <my-icons-heading></my-icons-heading>
+                        <my-icons-link></my-icons-link>
+                        <my-icons-bullet-list></my-icons-bold>
+                        <my-icons-number-list></my-icons-number-list>
+                        <my-icons-quote></my-icons-quote>
+                        <my-icons-code></my-icons-code>
+                        <my-icons-code-block></my-icons-code-block>
+                        <my-icons-table></my-icons-table>
+                        <my-icons-more></my-icons-more>
+                        <div class="text-white">Markdown Editor</div>
+                    </div>
+    
+                    <p>Body</p>
+                </div>
+                <div class="flex flex-row justify-end gap-3">
+                    <button class="text-gray bg-dark-gray p-3 rounded-full text-bodySmall">
+                        Save Draft
+                    </button>
+                    <button class="text-gray bg-dark-gray p-3 rounded-full text-bodySmall">
+                        Post
+                    </button>
+                </div>
+            </div>
+		</main>
+	</body>
+</html>
