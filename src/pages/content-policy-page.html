@@ -435,4 +435,448 @@ body {
     </footer>
     
 </body>
+=======
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Reddit</title>
+		<link rel="stylesheet" href="../css-reset.css" />
+		<link rel="stylesheet" href="../vanilla-tailwind.css" />
+		<link rel="stylesheet" href="../globals.css" />
+		<script type="module" src="../index.js"></script>
+		<style>
+			/* General Reset */
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			/* Body Styling */
+			body {
+				font-family: Arial, sans-serif;
+				line-height: 1.6;
+				background-color: #f6f7f8;
+				color: #333;
+				padding: 0 20px;
+			}
+
+			/* Header Section */
+			.header {
+				background-color: #ff4500;
+				padding: 15px 20px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.header-container {
+				display: flex;
+				align-items: center;
+				width: 100%;
+			}
+
+			.logo {
+				width: 120px;
+				height: auto;
+				margin-right: 20px;
+			}
+
+			.nav {
+				display: flex;
+				gap: 15px;
+				flex-grow: 1;
+			}
+
+			.nav a {
+				color: white;
+				text-decoration: none;
+				font-weight: bold;
+				font-size: 14px;
+			}
+
+			.nav a:hover {
+				text-decoration: underline;
+			}
+
+			.visit-reddit-button {
+				background-color: white;
+				color: #ff4500;
+				padding: 8px 15px;
+				border-radius: 20px;
+				font-size: 14px;
+				font-weight: bold;
+				text-decoration: none;
+			}
+
+			.visit-reddit-button:hover {
+				background-color: #ffdab9;
+				text-decoration: none;
+			}
+
+			/* Banner Section */
+			.banner {
+				background-color: #ff4500;
+				color: white;
+				text-align: center;
+				padding: 50px 20px;
+				margin: 20px 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 20px; /* Space between logo and text */
+			}
+
+			.banner-logo {
+				width: 60px; /* Adjust the size of the logo */
+				height: auto;
+			}
+
+			.banner h1 {
+				font-size: 36px;
+				margin: 0;
+			}
+
+			/* Main Content Section */
+			.main-content {
+				background: white;
+				border-radius: 8px;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+				padding: 20px;
+				margin-bottom: 20px;
+			}
+
+			.dropdowns {
+				display: flex;
+				justify-content: flex-end;
+				gap: 10px;
+				margin-bottom: 20px;
+			}
+
+			.dropdowns select {
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				font-size: 14px;
+				cursor: pointer;
+			}
+
+			.policy h2,
+			.enforcement h2 {
+				color: #ff4500;
+				margin-bottom: 10px;
+			}
+
+			.policy h3 {
+				margin: 15px 0 10px;
+				color: #ff4500;
+				font-size: 18px;
+			}
+
+			.policy p,
+			.enforcement p,
+			.enforcement ul {
+				margin-bottom: 15px;
+				font-size: 16px;
+				line-height: 1.8;
+			}
+
+			.enforcement ul {
+				list-style: disc inside;
+				padding-left: 20px;
+			}
+
+			/* Footer Section */
+			.footer {
+				background-color: #000;
+				color: white;
+				padding: 40px 20px;
+				text-align: center;
+			}
+
+			.footer-container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				flex-wrap: wrap;
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+
+			.footer-logo {
+				width: 120px;
+				height: auto;
+			}
+
+			.footer-links {
+				display: flex;
+				justify-content: space-between;
+				gap: 40px;
+				flex-grow: 1;
+			}
+
+			.footer-column {
+				width: 250px;
+			}
+
+			.footer-column h4 {
+				font-size: 16px;
+				margin-bottom: 10px;
+				font-weight: bold;
+				color: #ff4500;
+			}
+
+			.footer-column ul {
+				list-style: none;
+				padding: 0;
+			}
+
+			.footer-column ul li {
+				margin-bottom: 10px;
+			}
+
+			.footer-column ul li a {
+				color: white;
+				text-decoration: none;
+				font-size: 14px;
+			}
+
+			.footer-column ul li a:hover {
+				text-decoration: underline;
+			}
+
+			.footer p {
+				margin-top: 20px;
+				font-size: 14px;
+				color: #aaa;
+			}
+
+			/* Responsive Design */
+			@media (max-width: 768px) {
+				.footer-container {
+					flex-direction: column;
+					align-items: center;
+				}
+
+				.footer-links {
+					flex-direction: column;
+					align-items: center;
+					gap: 30px;
+				}
+
+				.footer-column {
+					width: 100%;
+					text-align: center;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-container">
+				<img
+					src="https://as1.ftcdn.net/v2/jpg/03/16/75/24/1000_F_316752482_SmCu3yMoMV7rMensP4IWCIx3FRrjNKvg.jpg"
+					alt="Reddit Logo"
+					class="logo"
+					width="120"
+					height="40"
+				/>
+				<nav class="nav">
+					<a href="#">About</a>
+					<a href="#">Careers</a>
+					<a href="#">Press</a>
+					<a href="#">Brand</a>
+					<a href="#">Transparency</a>
+					<a href="#">Investors</a>
+					<a href="#">Reddit for Good</a>
+					<a href="#">Blog</a>
+				</nav>
+				<a href="#" class="visit-reddit-button">Visit Reddit</a>
+			</div>
+		</header>
+
+		<section class="banner">
+			<img
+				src="https://as1.ftcdn.net/v2/jpg/03/16/75/24/1000_F_316752482_SmCu3yMoMV7rMensP4IWCIx3FRrjNKvg.jpg"
+				alt="Reddit Logo"
+				class="banner-logo"
+			/>
+			<h1>Reddit Content Policy</h1>
+		</section>
+
+		<main class="main-content">
+			<div class="dropdowns">
+				<select>
+					<option>Content Policy</option>
+				</select>
+				<select>
+					<option>English</option>
+				</select>
+			</div>
+
+			<article class="policy">
+				<h2>About Reddit</h2>
+				<p>
+					Reddit is a vast network of communities that are created, run, and
+					populated by you, the Reddit users.
+				</p>
+				<p>
+					Through these communities, you can post, comment, vote, discuss,
+					learn, debate, support, and connect with people who share your
+					interests, and we encourage you to find—or even create—your home on
+					Reddit.
+				</p>
+				<p>
+					While not every community may be for you (and you may find some
+					unrelatable or even offensive), no community should be used as a
+					weapon. Communities should create a sense of belonging for their
+					members, not try to diminish it for others. Likewise, everyone on
+					Reddit should have an expectation of privacy and safety, so please
+					respect the privacy and safety of others.
+				</p>
+				<p>
+					Every community on Reddit is defined by its users. Some of these users
+					help manage the community as moderators. The culture of each community
+					is shaped explicitly, by the community rules enforced by moderators,
+					and implicitly, by the upvotes, downvotes, and discussions of its
+					community members. Please abide by the rules of communities in which
+					you participate and do not interfere with those in which you are not a
+					member.
+				</p>
+				<p>
+					Below the rules governing each community are the platform-wide rules
+					that apply to everyone on Reddit. These rules are enforced by us, the
+					admins.
+				</p>
+				<p>
+					Reddit and its communities are only what we make of them together, and
+					can only exist if we operate by a shared set of rules. We ask that you
+					abide by not just the letter of these rules, but the spirit as well.
+				</p>
+
+				<h2>Rules</h2>
+				<h3>Rule 1</h3>
+				<p>
+					Remember the human. Reddit is a place for creating community and
+					belonging, not for attacking marginalized or vulnerable groups of
+					people. Everyone has a right to use Reddit free of harassment,
+					bullying, and threats of violence. Communities and users that incite
+					violence or that promote hate based on identity or vulnerability will
+					be banned.
+				</p>
+				<h3>Rule 2</h3>
+				<p>
+					Abide by community rules. Post authentic content into communities
+					where you have a personal interest, and do not cheat or engage in
+					content manipulation (including spamming, vote manipulation, ban
+					evasion, or subscriber fraud) or otherwise interfere with or disrupt
+					Reddit communities.
+				</p>
+				<h3>Rule 3</h3>
+				<p>
+					Respect the privacy of others. Instigating harassment, for example by
+					revealing someone’s personal or confidential information, is not
+					allowed. Never post or threaten to post intimate or sexually-explicit
+					media of someone without their consent.
+				</p>
+				<h3>Rule 4</h3>
+				<p>
+					Do not share or encourage the sharing of sexual, abusive, or
+					suggestive content involving minors. Any predatory or inappropriate
+					behavior involving a minor is also strictly prohibited.
+				</p>
+				<h3>Rule 5</h3>
+				<p>
+					You don’t have to use your real name to use Reddit, but don’t
+					impersonate an individual or an entity in a misleading or deceptive
+					manner.
+				</p>
+				<h3>Rule 6</h3>
+				<p>
+					Ensure people have predictable experiences on Reddit by properly
+					labeling content and communities, particularly content that is
+					graphic, sexually-explicit, or offensive.
+				</p>
+				<h3>Rule 7</h3>
+				<p>
+					Keep it legal, and avoid posting illegal content or soliciting or
+					facilitating illegal or prohibited transactions.
+				</p>
+				<h3>Rule 8</h3>
+				<p>
+					Don’t break the site or do anything that interferes with normal use of
+					Reddit.
+				</p>
+			</article>
+
+			<article class="enforcement">
+				<h2>Enforcement</h2>
+				<p>
+					We have a variety of ways of enforcing our rules, including, but not
+					limited to:
+				</p>
+				<ul>
+					<li>Asking you nicely to knock it off</li>
+					<li>Asking you less nicely</li>
+					<li>Temporary or permanent suspension of accounts</li>
+					<li>
+						Removal of privileges from, or adding restrictions to, accounts
+					</li>
+					<li>
+						Adding restrictions to Reddit communities, such as adding NSFW tags
+						or Quarantining
+					</li>
+					<li>Removal of content</li>
+					<li>Banning of Reddit communities</li>
+				</ul>
+			</article>
+		</main>
+
+		<footer class="footer">
+			<div class="footer-container">
+				<img
+					src="https://preview.redd.it/new-reddit-logo-official-v0-6sjpe15p0d3c1.jpg?width=640&crop=smart&auto=webp&s=1997dafc9d72935e6f93d3badcbf1e509e152f6c"
+					alt="Reddit Logo"
+					class="footer-logo"
+				/>
+				<div class="footer-links">
+					<div class="footer-column">
+						<h4>Company</h4>
+						<ul>
+							<li><a href="#">Reddit, Inc.</a></li>
+							<li><a href="#">Reddit for Business</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Investors</a></li>
+							<li><a href="#">Press Contact</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">r/RDDT</a></li>
+						</ul>
+					</div>
+					<div class="footer-column">
+						<h4>Community</h4>
+						<ul>
+							<li><a href="#">Reddit.com</a></li>
+							<li><a href="#">Reddit for Community</a></li>
+							<li><a href="#">Content Policy</a></li>
+							<li><a href="#">Help Center</a></li>
+							<li><a href="#">Moderator Code of Conduct</a></li>
+						</ul>
+					</div>
+					<div class="footer-column">
+						<h4>Privacy & Safety</h4>
+						<ul>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">User Agreement</a></li>
+							<li><a href="#">Transparency Report</a></li>
+							<li><a href="#">r/redditsafety</a></li>
+							<li><a href="#">Other Terms and Policies</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<p>Copyright 2024 Reddit, Inc. All rights reserved.</p>
+		</footer>
+	</body>
 </html>

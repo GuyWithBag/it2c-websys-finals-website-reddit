@@ -1,7 +1,7 @@
 <my-all-navigation>
 	<my-profile-right-sidebar slot="right-sidebar"></my-profile-right-sidebar>
 </my-all-navigation>
-<my-navbar class="z-30 absolute w-full">
+<my-navbar class="z-30 fixed w-full">
 	<my-navbar-selected-page slot="selectedPage">
 		<img
 			slot="image"
@@ -13,7 +13,7 @@
 	</my-navbar-selected-page>
 	<span slot="searchText">Search in u/GreenReddister123</span>
 </my-navbar>
-<main class="flex flex-col bg-black text-white gap-4 page-padding h-screen">
+<main class="flex flex-col bg-black text-white gap-4 page-padding min-h-screen">
 	<div class="flex flex-row items-center gap-2">
 		<div class="inline-flex center rounded-full overflow-hidden">
 			<img

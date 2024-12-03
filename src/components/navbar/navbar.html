@@ -18,9 +18,12 @@
 		>
 			<my-icons-search></my-icons-search>
 			<slot name="selectedPage"></slot>
-			<p class="text-bodySmall text-gray">
-				<slot name="searchText">Search Reddit</slot>
-			</p>
+			<div class="flex text-bodySmall text-gray">
+				<p class="absolute">
+					<slot name="searchText">Search Reddit</slot>
+				</p>
+				<input style="width: 557px" />
+			</div>
 		</li>
 		<li>
 			<ol class="flex flex-row gap-4 items-center justify-center">
@@ -35,18 +38,23 @@
 					</button>
 				</li>
 				<li>
-					<button class="flex flex-row center gap-1 text-bodySmall text-white">
+					<a
+						href="./pages/create-post-page.html"
+						class="flex flex-row center gap-1 text-bodySmall text-white"
+					>
 						<my-icons-plus></my-icons-plus>
 						Create
-					</button>
+					</a>
 				</li>
 				<li>
-					<button>
+					<a href="./pages/notifications-page.html">
 						<my-icons-bell></my-icons-bell>
-					</button>
+					</a>
 				</li>
 				<li>
-					<my-icons-user-profile></my-icons-user-profile>
+					<a href="./pages/profile-overview-page.html">
+						<my-icons-user-profile></my-icons-user-profile>
+					</a>
 				</li>
 			</ol>
 		</li>

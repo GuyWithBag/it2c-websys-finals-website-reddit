@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Reddit</title>
+		<link rel="stylesheet" href="../css-reset.css" />
+		<link rel="stylesheet" href="../vanilla-tailwind.css" />
+		<link rel="stylesheet" href="../globals.css" />
+		<script type="module" src="../index.js"></script>
+		<style>
+			:root {
+				--gold: rgb(216, 161, 0);
+			}
+
+			.text-gold {
+				color: var(--gold);
+			}
+			.border-gold {
+				border-color: var(--gold);
+			}
+			.bg-gold {
+				background-color: var(--gold);
+			}
+
+			.bg-dark-gray-2 {
+				background-color: rgb(24, 28, 31);
+			}
+
+			.footer-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr); /* 2 columns by default */
+				gap: 2rem; /* Space between items */
+			}
+
+			@media (min-width: 768px) {
+				.footer-grid {
+					grid-template-columns: repeat(
+						4,
+						1fr
+					); /* Switch to 4 columns for medium screens and above */
+				}
+			}
+
+			textarea {
+				margin: 0;
+				padding: 0;
+				border: none;
+				background: none;
+				font: inherit;
+				color: inherit;
+				outline: none;
+				resize: vertical; /* Optional: prevent resizing */
+			}
+			/* textarea:focus ~ .styledTextArea {
+				border-color: var(--white) !important;
+				background-color: white !important;
+			} */
+			textarea::placeholder {
+				color: var(--gray);
+				/* padding-left: var(--spacing-4); */
+			}
+			input {
+				all: unset;
+			}
+		</style>
+	</head>
+	<body>
+		<my-navbar></my-navbar>
+		<main class="bg-black min-h-screen flex">
+			<div class="relative z-30 flex flex-col text-white gap-6 w-full">
+				<div
+					style="
+						background-image: url(https://www.redditstatic.com/marketplace-assets/v1/core/premium/premium-hero.png);
+						background-color: rgb(42, 50, 54);
+						background-image: url(https://www.redditstatic.com/marketplace-assets/v1/core/premium/premium-hero.png);
+						background-position-x: 50%;
+						background-position-y: 50%;
+						background-repeat: no-repeat;
+						background-size: cover;
+						height: 521.025px;
+					"
+					class="relative"
+				>
+					<div
+						class="absolute left-20 flex flex-col gap-4"
+						style="bottom: 50%; width: 36%; transform: translateY(50%)"
+					>
+						<img
+							src="https://www.redditstatic.com/marketplace-assets/v1/core/premium/reddit-premium-logo-title.png"
+							alt=""
+							class="m-0"
+							style="width: 100%"
+						/>
+						<p class="text-titleMedium" style="line-height: 2rem">
+							Elevate your experience to ads-free with Reddit Premium. Access a
+							world of exclusive benefits and perks for the discerning redditor.
+						</p>
+						<div class="flex flex-row justify-around">
+							<button
+								class="border-gold border-solid border flex center rounded-full py-3 w-60 text-bodySmall"
+							>
+								$5.99/Month
+							</button>
+							<button
+								class="bg-gold text-black flex center rounded-full py-3 w-60 text-bodySmall"
+							>
+								$49.99/Year (Save 30%)
+							</button>
+						</div>
+						<p class="text-bodySmall">Subscriptions automatically renew</p>
+					</div>
+				</div>
+				<h1 class="text-headlineSmall" style="text-align: center">
+					<b>Embrace the luxury of ads-free</b>
+				</h1>
+				<div class="flex center flex-row gap-4">
+					<div
+						class="border-1 bg-dark-gray-2 border-solid border-light-gray flex flex-col center rounded-2xl p-6 gap-2"
+						style="width: 220px"
+					>
+						<img
+							class="m-0 w-12"
+							src="https://www.redditstatic.com/marketplace-assets/v1/core/premium/ad-free.png"
+							alt=""
+						/>
+						<p class="text-bodyMedium"><b>Ads-free browsing</b></p>
+						<p class="text-bodySmall text-gray">
+							Enjoy Reddit without interuption
+						</p>
+					</div>
+					<div
+						class="border-1 bg-dark-gray-2 border-solid border-light-gray flex flex-col center rounded-2xl p-6 gap-2"
+						style="width: 220px"
+					>
+						<img
+							class="m-0 w-12"
+							src="https://www.redditstatic.com/marketplace-assets/v1/core/premium/avatar-gear.png"
+							alt=""
+						/>
+						<p class="text-bodyMedium"><b>Avatar gear</b></p>
+						<p class="text-bodySmall text-gray">
+							Exclusive avatar outfits and accessories
+						</p>
+					</div>
+					<div
+						class="border-1 bg-dark-gray-2 border-solid border-light-gray flex flex-col center rounded-2xl p-6 gap-2"
+						style="width: 220px"
+					>
+						<img
+							class="m-0 w-12"
+							src="https://www.redditstatic.com/marketplace-assets/v1/core/premium/members-lounge.png"
+							alt=""
+						/>
+						<p class="text-bodyMedium"><b>Premium lounge</b></p>
+						<p class="text-bodySmall text-gray">
+							The secretive members-only subreddit
+						</p>
+					</div>
+					<div
+						class="border-1 bg-dark-gray-2 border-solid border-light-gray flex flex-col center rounded-2xl p-6 gap-2"
+						style="width: 220px"
+					>
+						<img
+							class="m-0 w-12"
+							src="https://www.redditstatic.com/marketplace-assets/v1/core/premium/custom-app.png"
+							alt=""
+						/>
+						<p class="text-bodyMedium"><b>Premium icons*</b></p>
+						<p class="text-bodySmall text-gray">
+							Tailor the app to express your style
+						</p>
+					</div>
+				</div>
+				<div class="flex flex-col">
+					<p class="text-bodySmall text-gray flex center">
+						Subscriptions automatically renew.
+					</p>
+					<p class="text-bodySmall text-gray flex center">
+						* Custom app icons are only available through a paid Reddit Premium
+						subscription.
+					</p>
+				</div>
+				<a class="text-bodyMedium text-white flex center"
+					><b>Visit the Reddit Premium FAQs</b></a
+				>
+				<footer
+					class="bg-true-black text-white py-8 px-4 flex flex-col gap-6 center text-bodySmall"
+				>
+					<div class="flex flex-row h-32 gap-9">
+						<div class="flex flex-col justify-between">
+							<a>About</a>
+							<a>Careers</a>
+							<a>Press</a>
+						</div>
+						<div class="flex flex-col justify-between">
+							<a>Advertise</a>
+							<a>Blog</a>
+							<a>Help</a>
+						</div>
+						<div class="h-full bg-gray" style="width: 1px"></div>
+						<div class="flex flex-col justify-between">
+							<a>Reddit Premium</a>
+						</div>
+						<div class="h-full bg-gray" style="width: 1px"></div>
+						<div class="flex flex-col justify-between">
+							<a>Facebook</a>
+							<a>Twitter</a>
+							<a>Instagram</a>
+						</div>
+					</div>
+					<div
+						class="flex flex-row text-bodySmall text-gray gap-4"
+						style="justify-content: space-evenly"
+					>
+						<a>Content Policy</a>
+						<a>Privacy Policy</a>
+						<a>User Agreement</a>
+						<a>Moderator Code of Contact</a>
+						<a>Reddit, Inc. © 2024. All rights reserved.</a>
+					</div>
+				</footer>
+			</div>
+		</main>
+	</body>
+</html>
