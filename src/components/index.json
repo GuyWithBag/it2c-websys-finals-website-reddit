@@ -67,7 +67,7 @@
         "icons/code", 
         "icons/bold", 
         "icons/bullet-list", 
-        "icons/code=block", 
+        "icons/code-block", 
         "profile-page-template"
     ]
 }
