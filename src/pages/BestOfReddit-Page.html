@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reddit</title>
+    <link rel="stylesheet" href="../css-reset.css" />
+    <link rel="stylesheet" href="../vanilla-tailwind.css" />
+    <link rel="stylesheet" href="../globals.css" />
+    <script type="module" src="../index.js"></script>
+    <style>
+      .size-img {
+        width: 581px;
+        height: 504px;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <!-- You can delete this, this is only for example -->
+    <my-all-navigation>
+      <my-recent-posts slot="right-sidebar"></my-recent-posts>
+    </my-all-navigation>
+    <div class="flex">
+      <aside class="bg-gray-800 w-64 p-4">
+        <nav>
+          <ul>
+            <li class="mb-2">
+              <a class="flex items-center" href="#">
+                <i class="fas fa-gamepad mr-2"></i>
+                Games
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="flex items-center" href="#">
+                <i class="fas fa-question-circle mr-2"></i>
+                Q&amp;As
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="flex items-center" href="#">
+                <i class="fas fa-laptop mr-2"></i>
+                Technology
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="flex items-center" href="#">
+                <i class="fas fa-star mr-2"></i>
+                Pop Culture
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="flex items-center" href="#">
+                <i class="fas fa-tv mr-2"></i>
+                Movies &amp; TV
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="flex items-center" href="#">
+                <i class="fas fa-ellipsis-h mr-2"></i>
+                See more
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mt-4">
+          <h2 class="text-lg font-bold mb-2">RESOURCES</h2>
+          <ul>
+            <li class="mb-2">
+              <a class="flex items-center" href="#">
+                <i class="fas fa-info-circle mr-2"></i>
+                About Reddit
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="flex items-center" href="#">
+                <i class="fas fa-bullhorn mr-2"></i>
+                Advertise
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="flex items-center" href="#">
+                <i class="fas fa-question-circle mr-2"></i>
+                Help
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="flex items-center" href="#">
+                <i class="fas fa-blog mr-2"></i>
+                Blog
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="flex items-center" href="#">
+                <i class="fas fa-briefcase mr-2"></i>
+                Careers
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="flex items-center" href="#">
+                <i class="fas fa-newspaper mr-2"></i>
+                Press
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <main class="flex-1 p-4 bg-gray-900 text-white">
+        <h1 class="text-2xl font-bold mb-4">Best of Reddit</h1>
+        <div class="flex items-center mb-4">
+          <button class="bg-gray-700 text-white px-4 py-2 rounded-full mr-2">2024</button>
+          <button class="bg-gray-700 text-white px-4 py-2 rounded-full">All</button>
+          <button class="bg-gray-700 text-white px-4 py-2 rounded-full ml-2">English</button>
+          <button class="bg-gray-700 text-white px-4 py-2 rounded-full ml-2">Spanish</button>
+          <button class="bg-gray-700 text-white px-4 py-2 rounded-full ml-2">German</button>
+          <button class="bg-gray-700 text-white px-4 py-2 rounded-full ml-2">Portuguese</button>
+          <button class="bg-gray-700 text-white px-4 py-2 rounded-full ml-2">French</button>
+        </div>
+        <div class="space-y-4">
+          <!-- Example posts -->
+          <div class="flex items-start">
+            <img alt="User avatar" class="mr-4" height="40" src="https://placehold.co/40x40" width="40" />
+            <div>
+              <a class="text-red-500" href="#">r/lululemon</a>
+              <p>new haul:</p>
+              <p class="text-gray-500">49K upvotes · 66 comments</p>
+            </div>
+            <img alt="Post image" class="ml-auto" height="80" src="https://placehold.co/80x80" width="80" />
+          </div>
+          <!-- Additional posts here -->
+        </div>
+      </main>
+      <aside class="bg-gray-800 w-64 p-4">
+        <h2 class="text-lg font-bold mb-4">TOP SUBREDDITS</h2>
+        <ul>
+          <li class="mb-2">
+            <a class="flex items-center" href="#">
+              <img alt="Subreddit icon" class="mr-2" height="40" src="https://placehold.co/40x40" width="40" />
+              r/funny
+              <span class="ml-auto">65,407,203 members</span>
+            </a>
+          </li>
+          <!-- More subreddits here -->
+        </ul>
+      </aside>
+    </div>
+  </body>
+</html>
