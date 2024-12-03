@@ -56,6 +56,18 @@
         "icons/circle-close", 
         "reply-post",
         "icons/plus-camera", 
+        "icons/table", 
+        "icons/strikethrough", 
+        "icons/superscript", 
+        "icons/quote", 
+        "icons/number-list", 
+        "icons/link", 
+        "icons/italic", 
+        "icons/heading", 
+        "icons/code", 
+        "icons/bold", 
+        "icons/bullet-list", 
+        "icons/code-block", 
         "profile-page-template"
     ]
 }
