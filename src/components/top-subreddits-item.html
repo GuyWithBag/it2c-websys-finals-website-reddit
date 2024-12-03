@@ -1,0 +1,24 @@
+<a class="flex flex-row gap-2 items-center">
+	<div
+		class="rounded-full overflow-hidden flex"
+		style="width: 32px; height: 32px"
+	>
+		<!-- <img
+			src="https://a.thumbs.redditmedia.com/kIpBoUR8zJLMQlF8azhN-kSBsjVUidHjvZNLuHDONm8.png"
+			style="width: 32px; height: 32px"
+			loading="lazy"
+		/> -->
+		<slot name="threadIcon"></slot>
+	</div>
+	<div class="flex flex-col gap-1 text-bodySmall">
+		<!-- <p class="text-white"><b>r/funny</b></p> -->
+		<p class="text-white">
+			<b><slot name="threadName"></slot></b>
+		</p>
+		<!-- <p>65,407,203 members</p> -->
+		<p>
+			<span><slot name="members"></slot></span> members
+		</p>
+	</div>
+</a>
+
