@@ -8,10 +8,305 @@
     <link rel="stylesheet" href="../globals.css" />
     <script type="module" src="../index.js"></script>
     <style>
-        .size-img {
-            width: 581px;
-            height: 504px;
-        }
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f6f7f8;
+    color: #333;
+    padding: 0 20px;
+}
+
+/* Header Section */
+.header {
+    background-color: #FFFFFF; /* Solid background color */
+    padding: 20px 40px; /* Increased padding for more space */
+    display: flex;
+    justify-content: space-between; /* Keeps the logo on the left and button on the right */
+    align-items: center;
+    position: relative; /* For positioning the button */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center; /* Centers the nav and logo inside the header */
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-right: 40px; /* More space between the logo and navigation */
+    position: absolute; /* Keeps the logo in place to the left */
+    left: 40px; /* Ensures the logo stays on the left side */
+}
+
+.nav {
+    display: flex;
+    gap: 25px; /* Increase gap between navigation links */
+    flex-grow: 1;
+    justify-content: center; /* Centers the nav links */
+}
+
+.nav a {
+    color: rgb(12, 11, 11);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    color: #fff; /* White text on hover to maintain contrast */
+}
+
+/* Visit Reddit Button */
+.visit-reddit-button {
+    background-color: #fff; /* White button with orange text */
+    color: #ff4500;
+    padding: 10px 30px; /* Horizontal padding for oval shape */
+    border-radius: 50px; /* Oval shape */
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.visit-reddit-button:hover {
+    background-color: #ffdab9; /* Light orange on hover */
+    text-decoration: none;
+}
+
+
+/* Banner Section */
+.banner {
+    background-color: #ff4500;
+    color: rgb(10, 7, 7);
+    text-align: center;
+    padding: 50px 20px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.banner-logo {
+    width: 10px; /* Realistic width for Reddit's logo in header */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Main Content Section */
+.main-content {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Dropdown Container */
+.dropdowns-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 20px;
+    align-items: flex-start; /* Align to the left */
+}
+
+/* Dropdowns */
+.dropdowns {
+    display: flex;
+    justify-content: flex-start; /* Align dropdowns to the left */
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%; /* Make sure it takes up the full width */
+}
+
+.dropdowns select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/* Policy and Enforcement Section */
+.policy-section {
+    max-width: 800px;
+    margin: 0 auto; /* Center the content */
+}
+
+/* Styling for Articles */
+.policy, .enforcement {
+    text-align: left; /* Align text to the left for readability */
+    margin: 0 auto; /* Center the content */
+    max-width: 800px; /* Limit the width for better readability */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #fff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: none; /* Remove the box-shadow */
+    border: none; /* Remove any borders */
+}
+
+.policy h2, .enforcement h2 {
+    color: #ff4500; /* Reddit's primary color for titles */
+    margin-bottom: 20px; /* Add spacing below the title */
+    font-size: 24px; /* Slightly larger font size for emphasis */
+    font-weight: bold; /* Make the title bold */
+    text-align: center; /* Center-align headings */
+}
+
+/* Other policy and enforcement styling remains the same */
+
+
+.policy h3, .enforcement h3 {
+    color: #333; /* Neutral text color for subheadings */
+    font-size: 18px; /* Medium font size for subheadings */
+    margin-top: 20px; /* Add spacing above subheadings */
+    margin-bottom: 10px; /* Add spacing below subheadings */
+}
+
+.policy p, .enforcement p {
+    font-size: 16px; /* Increase font size for readability */
+    line-height: 1.8; /* Add line height for better spacing */
+    color: #555; /* Softer text color for easy reading */
+    margin-bottom: 15px; /* Add spacing between paragraphs */
+}
+
+.enforcement ul {
+    list-style: disc inside; /* Use disc bullets */
+    margin-top: 10px; /* Add spacing above the list */
+    padding-left: 20px; /* Indent the list */
+    font-size: 16px; /* Match font size with paragraphs */
+    line-height: 1.6; /* Line height for better readability */
+}
+
+.enforcement ul li {
+    margin-bottom: 10px; /* Add spacing between list items */
+}
+
+.policy h3 {
+    margin: 15px 0 10px;
+    color: #ff4500;
+    font-size: 18px;
+}
+
+.policy p, .enforcement p, .enforcement ul {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.enforcement ul {
+    list-style: disc inside;
+    padding-left: 20px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    width: 120px;
+    height: auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-grow: 1;
+}
+
+.footer-column {
+    width: 250px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ff4500;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-content {
+        padding: 15px; /* Slightly reduce padding on smaller screens */
+    }
+}
+
     </style>
     <title>Reddit Content Policy</title>
     <link rel="stylesheet" href="content-policy.css">
