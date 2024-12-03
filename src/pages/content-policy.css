@@ -90,7 +90,7 @@ body {
     gap: 20px;
 }
 
-/* Adjust the banner logo size */
+
 .banner-logo {
     width: 10px; /* Realistic width for Reddit's logo in header */
     height: auto; /* Maintain aspect ratio */
