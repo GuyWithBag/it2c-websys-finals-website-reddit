@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Reddit</title>
+		<link rel="stylesheet" href="../css-reset.css" />
+		<link rel="stylesheet" href="../vanilla-tailwind.css" />
+		<link rel="stylesheet" href="../globals.css" />
+        <link rel="stylesheet" href="../index.css" />
+		<script type="module" src="../index.js"></script>
+	</head>
+<body>
+    <my-all-navigation></my-all-navigation>
+    <div class="flex flex-col bg-black text-white gap-3 page-padding">
+        <h1 class="title">Settings</h1>
+        <div class="tabs">
+          <span class="tab active">Account</span>
+          <span class="tab">Profile</span>
+          <span class="tab">Privacy</span>
+          <span class="tab">Preferences</span>
+          <span class="tab">Notifications</span>    
+          <span class="tab">Email</span>
+        </div>
+        <div class="section">
+          <h2>General</h2>
+          <div class="row">
+            <span2>Email address</span2>
+            <span2>user-email</span2>
+          </div>
+          <div class="row">
+            <span2>Gender</span2>
+            <span></span>
+          </div>
+          <div class="row">
+            <span2>Location customization</span2>
+            <span2>Use approximate location (based on IP)</span2>
+          </div>
+        </div>
+        <div class="section">
+          <h2>Account authorization</h2>
+          <div class="row">
+            <span2>Google</span2>
+            <button class="disconnect">Disconnect</button>
+
+          </div>
+          <div class="row">
+          <span>Connect to log in to Reddit with your Google account</span>
+        </div>
+          <div class="row">
+            <span2>Apple</span2>
+
+            <button class="connect">Disconnect</button>
+          </div>
+          <div class="row">
+          <span>Connect to log in to Reddit with your Apple account</span>
+        </div>
+          <div class="row">
+            <span2>Two-factor authentication</span2>
+            
+          </div>
+          <div class="row">
+          <span>Lost access to your authenticator app? <a href="#">Access your backup codes</a></span>
+        </div>
+        </div>
+        
+        <div class="section">
+          <h2>Subscriptions</h2>
+          <div class="flex-col">
+            <span2>Get Premium</span2>
+            <span></span>
+            <div class="section">
+                <h2>Advanced</h2>
+                <div class="flex-col">
+                  <span2>Delete Account</span2>
+                  <span></span>
+          </div>
+        </div>
+      </div>
+
+</body>
