@@ -68,6 +68,9 @@
         "icons/bold", 
         "icons/bullet-list", 
         "icons/code-block", 
-        "profile-page-template"
+        "icons/calendar", 
+        "profile-page-template", 
+        "best-of-reddit-item", 
+        "top-subreddits-item"
     ]
 }

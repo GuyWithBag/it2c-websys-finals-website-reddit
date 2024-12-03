@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Reddit</title>
+		<link rel="stylesheet" href="../css-reset.css" />
+		<link rel="stylesheet" href="../vanilla-tailwind.css" />
+		<link rel="stylesheet" href="../globals.css" />
+		<script type="module" src="../index.js"></script>
+	</head>
+	<body>
+		<my-all-navigation>
+			<div
+				slot="right-sidebar"
+				class="h-screen overflow-y-scroll w-72 text-gray text-bodySmall"
+			>
+				<div class="flex flex-col gap-3 p-5 rounded-2xl mt-10 bg-true-black">
+					<p class="text-white">TOP SUBREDDITS</p>
+					<my-top-subreddits-item>
+						<img
+							slot="threadIcon"
+							src="https://a.thumbs.redditmedia.com/kIpBoUR8zJLMQlF8azhN-kSBsjVUidHjvZNLuHDONm8.png"
+							loading="lazy"
+						/>
+						<span slot="threadName">r/funny</span>
+						<span slot="members">65,407,203</span>
+					</my-top-subreddits-item>
+					<button
+						class="text-white flex flex-row gap-2 rounded-full py-1 px-2 text-bodySmall"
+					>
+						See more
+					</button>
+				</div>
+			</div>
+		</my-all-navigation>
+		<main class="flex flex-col bg-black text-white gap-4 page-padding h-screen">
+			<div class="flex flex-col gap-2 relative z-30">
+				<h1>Best Of Reddit</h1>
+				<p>TOP POSTS FROM THE PAST</p>
+				<div class="flex flex-row">
+					<button
+						class="flex flex-row gap-2 bg-dark-gray rounded-full py-1 px-2 text-bodySmall center"
+					>
+						<span><my-icons-calendar></my-icons-calendar></span>
+						<span>2024</span>
+						<span><my-icons-up-arrow></my-icons-up-arrow></span>
+					</button>
+					<button
+						class="flex flex-row gap-2 bg-dark-gray rounded-full py-1 px-4 text-bodySmall center"
+					>
+						<span>All</span>
+					</button>
+					<button
+						class="flex flex-row gap-2 rounded-full py-1 px-4 text-bodySmall center"
+					>
+						<span>English</span>
+					</button>
+					<button
+						class="flex flex-row gap-2 rounded-full py-1 px-4 text-bodySmall center"
+					>
+						<span>Spanish</span>
+					</button>
+					<button
+						class="flex flex-row gap-2 rounded-full py-1 px-4 text-bodySmall center"
+					>
+						<span>German</span>
+					</button>
+					<button
+						class="flex flex-row gap-2 rounded-full py-1 px-4 text-bodySmall center"
+					>
+						<span>Portuguese</span>
+					</button>
+					<button
+						class="flex flex-row gap-2 rounded-full py-1 px-4 text-bodySmall center"
+					>
+						<span>French</span>
+					</button>
+				</div>
+				<my-best-of-reddit-item>
+					<img
+						slot="threadIcon"
+						src="https://styles.redditmedia.com/t5_2tma3/styles/communityIcon_8fcvgjh5u7x41.png"
+						alt="r/lululemon icon"
+						loading="lazy"
+					/>
+					<span slot="threadName">r/lululemon</span>
+					<span slot="title">New Haul (:</span>
+					<span slot="upvotes">49k</span>
+					<span slot="comments">66</span>
+					<img
+						slot="postImage"
+						src="https://external-preview.redd.it/cGtvN2tjMDM1eHVjMTs2FaQMRV6SWuFAQiaksuN8sxATRZuzm0sxP1uFlHan.png?width=140&amp;height=140&amp;crop=140:140,smart&amp;format=jpg&amp;v=enabled&amp;lthumb=true&amp;s=9924fc3f7f6f1a209e105898cb82e391e1401fc5"
+						alt="r/lululemon - new haul: "
+						loading="lazy"
+					/>
+				</my-best-of-reddit-item>
+			</div>
+		</main>
+	</body>
+</html>
