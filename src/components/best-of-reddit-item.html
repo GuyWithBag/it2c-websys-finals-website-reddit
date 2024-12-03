@@ -1,0 +1,44 @@
+<a
+	class="flex flex-row justify-between items-stretch text-gray text-bodySmall"
+	style="height: 110px"
+>
+	<div class="flex flex-col justify-between">
+		<div class="flex flex-col gap-2">
+			<div class="flex flex-row gap-2 items-center">
+				<div
+					class="rounded-full overflow-hidden flex"
+					style="width: 24px; height: 24px"
+				>
+					<!-- <img
+						src="https://styles.redditmedia.com/t5_2tma3/styles/communityIcon_8fcvgjh5u7x41.png"
+						alt="r/lululemon icon"
+						loading="lazy"
+					/> -->
+					<slot name="threadIcon"></slot>
+				</div>
+				<!-- <div>r/lululemon</div> -->
+				<div><slot name="threadName"></slot></div>
+			</div>
+			<!-- <div><b>New Haul</b></div> -->
+			<div>
+				<b><slot name="title"></slot></b>
+			</div>
+		</div>
+		<p>
+			<!-- <span>49k upvotes</span>
+			<span>·</span>
+			<span>66 comments</span> -->
+			<span><slot name="upvotes"></slot> upvotes</span>
+			<span>·</span>
+			<span><slot name="comments"></slot> comments</span>
+		</p>
+	</div>
+	<div class="overflow-hidden rounded-xl">
+		<!-- <img
+			src="https://external-preview.redd.it/cGtvN2tjMDM1eHVjMTs2FaQMRV6SWuFAQiaksuN8sxATRZuzm0sxP1uFlHan.png?width=140&amp;height=140&amp;crop=140:140,smart&amp;format=jpg&amp;v=enabled&amp;lthumb=true&amp;s=9924fc3f7f6f1a209e105898cb82e391e1401fc5"
+			alt="r/lululemon - new haul: "
+			loading="lazy"
+		/> -->
+		<slot name="postImage"></slot>
+	</div>
+</a>
