@@ -56,6 +56,9 @@
         "icons/circle-close", 
         "reply-post",
         "icons/plus-camera", 
-        "profile-page-template"
+        "icons/calendar", 
+        "profile-page-template", 
+        "best-of-reddit-item", 
+        "top-subreddits-item"
     ]
 }
